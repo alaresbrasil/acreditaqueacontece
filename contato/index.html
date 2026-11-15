@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fale com a Alares pelo WhatsApp</title>
+<meta name="description" content="Entre em contato com a Alares pelo WhatsApp. Atendimento rápido e fácil.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+@font-face{font-family:'Carbona';src:url('../assets/fonts/carbona-extralight.woff2') format('woff2');font-weight:200;font-display:swap}
+@font-face{font-family:'Carbona';src:url('../assets/fonts/carbona-light.woff2') format('woff2');font-weight:300;font-display:swap}
+@font-face{font-family:'Carbona';src:url('../assets/fonts/carbona-regular.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'AlaresSans';src:url('../assets/fonts/body-regular.woff2') format('woff2');font-weight:400;font-display:swap}
+.logo-img{height:42px;width:auto;margin:0 auto 26px;display:block}
+h1{font-family:'Carbona',Arial,Helvetica,sans-serif}
+
+*{box-sizing:border-box}body{margin:0;font-family:'AlaresSans',Arial,Helvetica,sans-serif;background:#5a53f7;color:#fff;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+.card{width:min(560px,100%);background:#fff;color:#171717;border-radius:28px;padding:42px 30px;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.25)}
+.logo{font-size:34px;font-weight:900;color:#5a53f7;margin-bottom:28px}.logo span{color:#36efa2}
+h1{font-size:32px;line-height:1.1;margin:0 0 14px}p{font-size:17px;line-height:1.5;color:#555;margin:0 auto 28px;max-width:450px}
+.btn{display:block;text-decoration:none;background:#36efa2;color:#111;font-weight:800;font-size:18px;padding:18px 22px;border-radius:14px;transition:.2s}
+.btn:hover{transform:translateY(-2px)}.small{font-size:13px;color:#777;margin-top:18px}
+</style>
+</head>
+<body>
+<main class="card">
+  <img class="logo-img" src="../assets/img/logos/logo-purple.png" alt="Alares">
+  <h1>Fale com a Alares pelo WhatsApp</h1>
+  <p>Entre em contato com a Alares de forma rápida e fácil. Clique abaixo para continuar o atendimento pelo WhatsApp.</p>
+  <a class="btn" id="whatsappBtn" data-event="whatsapp_click" data-source="site_contato" href="https://wa.me/551521210619">Continuar pelo WhatsApp</a>
+  <div class="small">(15) 2121-0619</div>
+</main>
+<script>
+(function(){
+  const params = new URLSearchParams(location.search);
+  const keys = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','gclid','fbclid'];
+  const tracking = {};
+  keys.forEach(k => { if(params.get(k)) tracking[k] = params.get(k); });
+  window.CAMPAIGN_TRACKING = tracking;
+
+  const btn = document.getElementById('whatsappBtn');
+  btn.addEventListener('click', function(){
+    window.WHATSAPP_CLICK_DATA = {
+      event: 'whatsapp_click',
+      source: 'site_contato',
+      timestamp: new Date().toISOString(),
+      tracking: window.CAMPAIGN_TRACKING
+    };
+    if (window.dataLayer) {
+      window.dataLayer.push(window.WHATSAPP_CLICK_DATA);
+    }
+  });
+})();
+</script>
+<!-- Cole aqui suas tags do Google Ads / GTM / GA4 / Meta Pixel quando quiser. -->
+</body>
+</html>
