@@ -1,0 +1,1801 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4XP57RLK14"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4XP57RLK14');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes, viewport-fit=cover">
+<title>Alares | Internet que te leva mais longe</title>
+<meta name="description" content="Internet fibra óptica, planos, atendimento e serviços Alares. Internet que te leva mais longe.">
+<meta name="theme-color" content="#5a53f7">
+  <link rel="icon" href="assets/img/logos/icon-bird-green.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/logos/icon-bird-green.png">
+<style>
+
+@font-face{font-family:'Carbona';src:url('assets/fonts/carbona-extralight.woff2') format('woff2');font-weight:200;font-style:normal;font-display:swap}
+@font-face{font-family:'Carbona';src:url('assets/fonts/carbona-light.woff2') format('woff2');font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:'Carbona';src:url('assets/fonts/carbona-regular.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'AlaresSans';src:url('assets/fonts/body-regular.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+
+:root{
+  --primary:#5a53f7;--primary-hover:#463ee4;--secondary:#36efa2;--offer:#04d683;
+  --purple:#5a53f7;--purple2:#5a53f7;--purple3:#7b74ff;--deep:#1a1060;
+  --green:#36efa2;--green2:#04d683;--lime:#36efa2;--ink:#16161e;
+  --muted:#5f5f6e;--bg:#f6f5ff;--line:#e6e4f5;--white:#fff;--wa:#25d366;--max:1180px;
+  --shadow-sm:0 2px 8px rgba(70,62,228,.07);
+  --shadow-md:0 6px 20px rgba(70,62,228,.10);
+  --shadow-lg:0 14px 40px rgba(26,16,96,.16);
+  --radius:14px;--radius-lg:22px;--radius-xl:30px;
+  --t-fast:.16s ease;--t:.28s cubic-bezier(.2,.7,.3,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{font-family:'AlaresSans',Inter,-apple-system,"Segoe UI",Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink);line-height:1.45;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+button,a{font:inherit;color:inherit;text-decoration:none;cursor:pointer;touch-action:auto}
+img{max-width:100%;height:auto;display:block}
+button{border:0;background:none}
+.container{width:min(calc(100% - 34px),var(--max));margin:auto}
+
+/* TOPO / HEADER */
+.site-head{position:absolute;left:0;right:0;top:0;z-index:1000;color:#fff}
+.topbar{height:34px;background:rgba(2,10,25,.85);backdrop-filter:blur(6px);font-size:11px;border-bottom:1px solid rgba(255,255,255,.06)}
+.topbar .container{height:100%;display:flex;align-items:center;justify-content:space-between}
+.topbar .left,.topbar .right{display:flex;gap:26px;align-items:center}
+.topbar span{cursor:pointer;transition:opacity var(--t-fast)}
+.topbar span:hover{opacity:.82}
+.dot{width:6px;height:6px;background:var(--green);border-radius:50%;display:inline-block;margin-right:6px;box-shadow:0 0 8px rgba(0,226,138,.6)}
+.navbar{height:72px;background:linear-gradient(180deg,rgba(0,0,0,.32),rgba(0,0,0,.08));border-bottom:1px solid rgba(255,255,255,.08)}
+.navbar .container{height:100%;display:grid;grid-template-columns:180px 1fr 200px;align-items:center;gap:15px}
+.brand{display:inline-flex;align-items:center;gap:8px;color:#fff;font-size:30px;font-weight:800;letter-spacing:-2px;text-decoration:none}
+.brand .logo-mark{width:22px;height:22px;transition:transform var(--t)}
+.brand:hover .logo-mark{transform:translateX(3px)}
+.navlinks{display:flex;justify-content:center;gap:36px;align-items:center}
+.navlinks a{font-size:12px;font-weight:800;letter-spacing:.02em;color:#fff;white-space:nowrap;position:relative;padding:4px 0;transition:color var(--t-fast)}
+.navlinks a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:2px;background:var(--green);transition:right var(--t)}
+.navlinks a:hover::after{right:0}
+.wa-head{justify-self:end;display:inline-flex;align-items:center;gap:8px;background:var(--green);color:#07351f!important;border-radius:999px;padding:9px 16px;font-size:11px;font-weight:900;letter-spacing:.02em;transition:transform var(--t),box-shadow var(--t),background var(--t);white-space:nowrap}
+.wa-head b{font-size:14px;font-weight:900}
+.wa-head .phoneicon{font-size:14px;color:#07351f}
+.wa-head:hover{transform:translateY(-1px);box-shadow:0 8px 22px rgba(0,226,138,.35);background:#36efa2}
+.more{color:var(--green);font-weight:900}
+
+/* HERO */
+.hero{position:relative;padding-top:106px;background:#16161e;color:#fff}
+.hero-media{position:relative;width:100%;aspect-ratio:709/599;max-height:660px;overflow:hidden;background:#16161e}
+.hero-slide{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center center;opacity:0;transition:opacity .5s ease}
+.hero-slide.active{opacity:1}
+.hero-dots{position:absolute;z-index:4;left:50%;bottom:12px;transform:translateX(-50%);display:flex;gap:6px}
+.hero-dots button{width:44px;height:4px;border:0;border-radius:4px;background:rgba(255,255,255,.65);opacity:1;cursor:pointer;transition:background var(--t-fast),transform var(--t-fast)}
+.hero-dots button:hover{transform:scaleY(1.4)}
+.hero-dots button.active{background:var(--green);width:56px}
+.hero-arrows{position:absolute;right:20px;top:50%;transform:translateY(-50%);z-index:5;display:grid;gap:12px}
+.hero-arrows button{width:44px;height:44px;border:1.5px solid rgba(255,255,255,.85);border-radius:50%;background:rgba(0,0,0,.18);backdrop-filter:blur(6px);color:#fff;font-size:20px;cursor:pointer;transition:background var(--t-fast),transform var(--t-fast),border-color var(--t-fast)}
+.hero-arrows button:hover{background:var(--green);border-color:var(--green);color:#07351f;transform:scale(1.06)}
+
+/* ABAS + PLANOS */
+.offer-wrap{background:var(--bg);padding:22px 0 32px}
+.tabs{display:flex;gap:10px;overflow:auto;padding:0 6px 18px;scrollbar-width:none;flex-wrap:wrap}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:0 0 auto;border:1.5px solid #e6e4f5;background:#fff;color:#4c4a66;border-radius:999px;padding:10px 18px;font-size:11px;font-weight:800;cursor:pointer;transition:all var(--t-fast);white-space:nowrap}
+.tab:hover{border-color:var(--purple3);color:var(--purple);transform:translateY(-1px)}
+.tab.active{border-color:var(--purple3);background:linear-gradient(135deg,#eeecff,#e3deff);color:#5040d0;box-shadow:0 4px 14px rgba(80,64,208,.14)}
+.plan-row{display:flex;gap:16px;overflow-x:auto;padding:0 6px 6px;scrollbar-width:none;scroll-snap-type:x proximity}
+.plan-row::-webkit-scrollbar{display:none}
+.plan{flex:0 0 170px;background:#fff;border-radius:var(--radius);overflow:hidden;border:1px solid #e6e4f5;box-shadow:var(--shadow-sm);min-height:360px;position:relative;scroll-snap-align:start;transition:transform var(--t),box-shadow var(--t),border-color var(--t)}
+.plan:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:#d5cfee}
+.plan-head{height:86px;background:linear-gradient(135deg,#6a63ff,#5a53f7);color:#fff;padding:14px 14px 10px;position:relative;overflow:hidden}
+.plan-head::after{content:"";position:absolute;right:-30px;top:-30px;width:100px;height:100px;background:radial-gradient(circle,rgba(255,255,255,.14),transparent 70%);border-radius:50%}
+.plan-head small{display:block;font-size:8.5px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;opacity:.85}
+.plan-head strong{display:block;font-size:24px;line-height:1.02;margin-top:6px;font-weight:800;position:relative}
+.exclusive{position:absolute;top:0;left:0;background:var(--green);color:#07351f;font-size:7.5px;font-weight:900;padding:6px 9px;border-radius:0 0 8px 0;letter-spacing:.02em;z-index:2}
+.plan-body{padding:14px 14px 16px}
+.included{font-size:9px;color:#5f5f6e;text-align:center;margin-bottom:10px;font-weight:600}
+.service{height:34px;border:1px solid #f0effa;border-radius:6px;display:grid;place-items:center;font-weight:900;font-size:12px;margin-bottom:10px;background:#ffffff}
+.service.red{color:#e94c61}.service.dark{color:#15151d}.service.orange{color:#1b1b1b}
+.plan-feature{font-size:9.5px;color:#5f5f6e;border-bottom:1px solid #f0effa;padding:6px 0;font-weight:600}
+.plan-price{font-size:22px;font-weight:700;margin-top:22px;text-align:center;color:#463ee4}
+.plan-note{font-size:7.5px;color:#888;text-align:center;margin-top:2px}
+.plan .contract{display:block;margin:12px auto 6px;width:100%;padding:10px;border:0;border-radius:22px;background:linear-gradient(135deg,var(--green),var(--green2));color:#fff;font-size:11px;font-weight:900;cursor:pointer;letter-spacing:.04em;transition:transform var(--t-fast),box-shadow var(--t-fast);box-shadow:0 4px 12px rgba(0,196,122,.3)}
+.plan .contract:hover{transform:translateY(-1px);box-shadow:0 8px 20px rgba(0,196,122,.4)}
+.plan .contract:active{transform:scale(.98)}
+.plan .saiba{display:block;text-align:center;font-size:9px;color:#463ee4;text-decoration:underline;font-weight:700}
+.more-offer{display:flex;align-items:center;justify-content:center;text-align:center;padding:24px 14px;color:#55536b;font-size:11px;font-weight:600;background:#fff}
+.more-offer .mark{font-size:36px;color:#463ee4;font-weight:900;display:block;margin-bottom:22px}
+
+/* ATENDIMENTO */
+.channels-wrap{background:#fff;border-radius:var(--radius-lg);margin:8px 17px 0;padding:0 16px 20px;box-shadow:var(--shadow-sm)}
+.section-ribbon{width:270px;max-width:80%;margin:-1px auto 18px;background:linear-gradient(135deg,var(--green),var(--green2));color:#fff;border-radius:0 0 12px 12px;text-align:center;font-size:11px;font-weight:900;letter-spacing:.22em;padding:9px 10px;box-shadow:0 6px 18px rgba(0,196,122,.25)}
+.channels{display:flex;gap:14px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
+.channels::-webkit-scrollbar{display:none}
+.channel{flex:0 0 220px;border:1.5px solid #e6e4f5;border-radius:12px;background:#fff;padding:15px;display:flex;align-items:center;gap:12px;min-height:62px;cursor:pointer;transition:all var(--t-fast)}
+.channel:hover{border-color:var(--green);transform:translateY(-2px);box-shadow:0 8px 22px rgba(0,196,122,.15)}
+.channel .ico{width:24px;height:24px;color:var(--green2);flex:none;font-size:20px;display:grid;place-items:center}
+.channel b{font-size:10px;font-weight:800;line-height:1.2;letter-spacing:.02em}
+.channel .arrow{margin-left:auto;color:var(--green2);font-size:20px;transition:transform var(--t-fast)}
+.channel:hover .arrow{transform:translateX(3px)}
+
+/* CONHEÇA */
+.about-section{padding:32px 17px 60px}
+.about-card{position:relative;border-radius:var(--radius-xl);background:linear-gradient(120deg,#3020a9 0%,#6a63ff 55%,#8b85ff 100%);color:#fff;min-height:500px;overflow:hidden;padding:44px 50px;display:grid;grid-template-columns:280px 1fr;gap:60px;align-items:center;box-shadow:var(--shadow-lg)}
+.about-card::after{content:"";position:absolute;right:-5px;top:-7px;width:180px;height:150px;background:linear-gradient(135deg,transparent 30%,#2c238e 31% 55%,transparent 56%);clip-path:polygon(0 0,100% 0,100% 100%,72% 73%,76% 46%,38% 37%,45% 16%,0 10%);opacity:.92;pointer-events:none}
+.about-img{width:280px;height:470px;object-fit:cover;border-radius:18px;display:block;box-shadow:0 20px 45px rgba(0,0,0,.28)}
+.about-copy{position:relative;z-index:2;max-width:540px}
+.about-copy h2{font-size:30px;font-weight:500;margin-bottom:14px;letter-spacing:-.01em}
+.about-copy p{font-size:15px;line-height:1.6;color:rgba(255,255,255,.92);margin-bottom:26px}
+.outline-btn{border:1.5px solid var(--green);color:#fff;background:rgba(0,226,138,.08);border-radius:999px;padding:11px 22px;font-size:11px;font-weight:900;cursor:pointer;letter-spacing:.04em;transition:all var(--t-fast)}
+.outline-btn:hover{background:var(--green);color:#07351f;box-shadow:0 8px 22px rgba(0,226,138,.35);transform:translateY(-1px)}
+
+/* POR QUE */
+.why{padding:0 37px 60px}
+.why-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:26px}
+.why-title h2{font-size:26px;font-weight:500;letter-spacing:-.01em}
+.arrows{display:flex!important;align-items:center!important;justify-content:flex-end!important;gap:10px!important}
+.arrows .why-arrow{flex:0 0 42px!important;width:42px!important;height:42px!important;min-width:42px!important;min-height:42px!important;max-width:42px!important;max-height:42px!important;border:1.5px solid #e6e4f5!important;border-radius:50%!important;padding:0!important;margin:0!important;display:flex!important;align-items:center!important;justify-content:center!important;line-height:1!important;font-size:20px!important;font-weight:500!important;background:#fff!important;color:#555267!important;transition:all var(--t-fast);cursor:pointer}
+.arrows .why-arrow:hover{transform:translateY(-2px);background:var(--purple)!important;color:#fff!important;border-color:var(--purple)!important;box-shadow:0 8px 20px rgba(78,66,238,.28)}
+.arrows .why-arrow:active{transform:scale(.94)}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;overflow-x:auto;scroll-snap-type:x proximity;scrollbar-width:none;padding-bottom:4px}
+.why-grid::-webkit-scrollbar{display:none}
+.why-item{min-width:0;scroll-snap-align:start}
+.why-icon{width:76px;height:76px;border:2px solid var(--green);border-radius:50%;display:grid;place-items:center;color:var(--green2);font-size:30px;margin-bottom:18px;transition:all var(--t);background:rgba(0,226,138,.06)}
+.why-item:hover .why-icon{background:var(--green);color:#07351f;transform:scale(1.05) rotate(-4deg)}
+.why-item h3{font-size:15px;line-height:1.2;margin-bottom:10px;font-weight:700}
+.why-item p{font-size:11.5px;color:#5f5f6e;line-height:1.55;border-top:1px solid #dedbe6;padding-top:12px}
+
+/* RODAPÉ */
+.footer{margin:34px 17px 18px;background:linear-gradient(120deg,#3a2fd0 0%,#5a53f7 60%,#6a63ff 100%);color:#fff;border-radius:var(--radius-xl) var(--radius-xl) 0 0;overflow:hidden;box-shadow:var(--shadow-lg)}
+.footer-main{padding:44px 24px 38px;display:grid;grid-template-columns:1.15fr 1fr 1fr 1fr;gap:0}
+.footer-col{padding:0 30px;border-left:1px solid rgba(255,255,255,.14)}
+.footer-col:first-child{border-left:0;padding-left:0}
+.footer-brand{display:flex;flex-direction:column;gap:18px}
+.footer-logo-svg{display:inline-block;line-height:0;margin-bottom:2px}
+.social{display:flex;gap:12px;color:#fff}
+.social a{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.1);color:#fff;transition:all var(--t-fast)}
+.social a:hover{background:var(--green);color:#07351f;transform:translateY(-2px);box-shadow:0 8px 18px rgba(0,226,138,.35)}
+.footer-wa{display:inline-flex;align-items:center;gap:8px;background:var(--green);color:#07351f!important;border-radius:999px;padding:11px 16px;font-size:10.5px;font-weight:900;align-self:flex-start;transition:all var(--t-fast);letter-spacing:.02em}
+.footer-wa:hover{background:#36efa2;transform:translateY(-1px);box-shadow:0 8px 20px rgba(0,226,138,.35)}
+.footer h3{color:var(--green);font-size:14px;font-weight:800;margin-bottom:16px;letter-spacing:.02em}
+.footer ul{list-style:none;display:grid;gap:10px}
+.footer li a{font-size:11px;color:#fff;opacity:.92;transition:all var(--t-fast);display:inline-block}
+.footer li a:hover{opacity:1;color:var(--green);transform:translateX(3px)}
+.footer-legal{display:flex;justify-content:space-between;gap:15px;border-top:1px solid rgba(255,255,255,.14);padding:16px 24px;font-size:10px;color:rgba(255,255,255,.85)}
+.footer-legal a{color:rgba(255,255,255,.85);text-decoration:underline}
+.footer-legal a:hover{color:var(--green)}
+.float-wa{position:fixed;right:20px;bottom:20px;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:var(--wa);color:#fff;z-index:80;border:3px solid #fff;box-shadow:0 8px 24px rgba(0,0,0,.25);font-size:26px;transition:transform var(--t),box-shadow var(--t)}
+.float-wa:hover{transform:scale(1.08);box-shadow:0 12px 32px rgba(37,211,102,.45)}
+.sac{position:fixed;right:88px;bottom:32px;background:#fff;border-radius:12px;padding:10px 14px;font-size:11px;font-weight:900;color:#3e3d4c;box-shadow:var(--shadow-md);z-index:79;transition:all var(--t-fast)}
+.sac:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+.sac strong{color:#159d7d}
+
+/* PÁGINAS INTERNAS */
+.page{display:none;background:var(--bg);min-height:60vh;padding-bottom:50px}
+.page.active{display:block;padding-top:106px;min-height:100vh}
+.page-head{position:relative;overflow:hidden;background:linear-gradient(120deg,#261b8c 0%,#5a53f7 100%);color:#fff;padding:56px 20px 60px;box-shadow:0 10px 30px rgba(36,27,145,.14)}
+.page-head::after{content:"";position:absolute;right:-80px;bottom:-80px;width:320px;height:320px;background:radial-gradient(circle,rgba(0,226,138,.18),transparent 65%);border-radius:50%;pointer-events:none}
+.page-head h1{font-size:clamp(30px,5vw,52px);font-weight:600;letter-spacing:-.015em;position:relative;z-index:2}
+.page-head p{margin-top:12px;max-width:720px;color:rgba(255,255,255,.9);font-size:15px;line-height:1.6;position:relative;z-index:2}
+.page-back{display:inline-flex;align-items:center;gap:6px;min-height:40px;margin:0 0 22px;padding:10px 18px;border-radius:999px;background:rgba(255,255,255,.15);color:#fff;text-decoration:none;font-weight:700;font-size:13px;transition:all var(--t-fast);position:relative;z-index:2;border:1px solid rgba(255,255,255,.14)}
+.page-back:hover{background:#fff;color:#4e46c8;transform:translateY(-1px)}
+.page-content{width:100%;max-width:1180px;margin:0 auto;padding:38px 20px}
+.page-content p,.page-content li{line-height:1.65}
+.page-cards{display:flex;gap:18px;overflow:auto;scrollbar-width:none;padding:4px 2px 12px}
+.page-cards::-webkit-scrollbar{display:none}
+.page-card{flex:0 0 260px;background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);padding:26px;transition:all var(--t);min-width:0;overflow:hidden;box-shadow:var(--shadow-sm)}
+.page-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:#d5cfee}
+.page-card h3{font-size:18px;margin-bottom:10px;font-weight:700;color:#16161e}
+.page-card p{font-size:13px;color:var(--muted);margin-bottom:20px;line-height:1.55}
+.page-card strong{display:block;font-size:24px;margin-bottom:16px;color:#463ee4;font-weight:800}
+.page-card button{min-height:44px;cursor:pointer;border:0;background:linear-gradient(135deg,var(--green),var(--green2));color:#fff;border-radius:999px;padding:11px 20px;font-size:11px;font-weight:900;letter-spacing:.04em;transition:all var(--t-fast);box-shadow:0 4px 12px rgba(0,196,122,.25)}
+.page-card button:hover{transform:translateY(-1px);box-shadow:0 8px 20px rgba(0,196,122,.4)}
+.page-footer{margin-top:34px}
+
+.feature-panel,.cta-panel,.warning-panel,.legal-panel{background:linear-gradient(120deg,#3021a8,#5447e8);color:#fff;border-radius:var(--radius-xl);padding:40px;margin-bottom:26px;position:relative;overflow:hidden;box-shadow:var(--shadow-lg)}
+.feature-panel::after,.cta-panel::after,.warning-panel::after{content:"";position:absolute;right:-100px;top:-100px;width:280px;height:280px;background:radial-gradient(circle,rgba(0,226,138,.16),transparent 65%);border-radius:50%;pointer-events:none}
+.feature-panel{display:grid;grid-template-columns:1.4fr .8fr;gap:30px;align-items:center}
+.feature-panel h2,.cta-panel h2,.warning-panel h2,.legal-panel h2{margin:0 0 14px;font-size:30px;font-weight:600;position:relative;z-index:2;letter-spacing:-.01em}
+.feature-panel p,.cta-panel p,.warning-panel p,.legal-panel p{color:rgba(255,255,255,.92);margin-bottom:20px;position:relative;z-index:2;line-height:1.6}
+.feature-panel button,.cta-panel button,.warning-panel button,.legal-panel button,.info-grid button{border:0;background:linear-gradient(135deg,var(--green),var(--green2));color:#07351f;border-radius:999px;padding:13px 24px;font-weight:900;font-size:11px;letter-spacing:.04em;cursor:pointer;transition:all var(--t-fast);position:relative;z-index:2;box-shadow:0 6px 18px rgba(0,196,122,.3)}
+.feature-panel button:hover,.cta-panel button:hover,.warning-panel button:hover,.legal-panel button:hover,.info-grid button:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(0,196,122,.45);background:#36efa2}
+.feature-stat{display:grid;grid-template-columns:1fr 1fr;gap:10px 16px;background:rgba(255,255,255,.1);border-radius:20px;padding:24px;backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.14);position:relative;z-index:2}
+.feature-stat strong{font-size:28px;color:#fff;font-weight:800}
+.feature-stat span{font-size:12px;color:rgba(255,255,255,.78);align-self:center;line-height:1.35}
+.info-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:6px}
+.info-grid article{background:#fff;border:1px solid #e9e7f6;border-radius:var(--radius-lg);padding:26px;box-shadow:var(--shadow-sm);transition:all var(--t);display:flex;flex-direction:column}
+.info-grid article:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:#d5cfee}
+.info-grid h3{font-size:18px;margin-bottom:10px;font-weight:700;color:#16161e}
+.info-grid p{font-size:13px;margin-bottom:20px;color:var(--muted);line-height:1.55;flex:1}
+.info-grid .eyebrow{display:inline-block;color:var(--green2);font-size:10px;font-weight:900;letter-spacing:1.5px;margin-bottom:12px;text-transform:uppercase}
+.warning-panel{background:linear-gradient(120deg,#463ee4,#5a53f7)}
+.legal-panel{background:#fff;color:#31313d;border:1px solid #e9e7f6}
+.legal-panel p{color:#5f6070}
+.legal-panel h2{color:#3022a9;font-size:22px;margin-top:24px}
+.legal-panel h2:first-child{margin-top:0}
+.fineprint{font-size:11.5px!important;color:#858493!important;margin-top:18px!important;font-style:italic}
+
+.mobile-menu{position:fixed;z-index:1000;top:82px;right:12px;width:min(340px,calc(100% - 24px));background:#fff;border-radius:20px;padding:14px;box-shadow:var(--shadow-lg);display:none;animation:slideDown .25s ease}
+@keyframes slideDown{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:translateY(0)}}
+.mobile-menu.open{display:block}
+.mobile-menu a{display:block;padding:13px 14px;border-bottom:1px solid #eee;color:#333;font-size:13px;font-weight:700;transition:background var(--t-fast);border-radius:10px}
+.mobile-menu a:hover{background:#f0effa;color:var(--purple)}
+.mobile-menu a:last-child{border-bottom:0}
+
+@media(min-width:900px){
+  .hero{padding-top:0}
+  .hero-media{aspect-ratio:auto;height:660px}
+  .hero-slide{object-position:center}
+  .plan{flex-basis:270px}
+  .channels-wrap{margin:8px auto 0;padding-left:22px;padding-right:22px;max-width:1140px}
+  .channel{flex:1}
+  .about-section{max-width:1140px;margin:auto;padding-left:0;padding-right:0}
+  .about-card{grid-template-columns:340px 1fr;padding:54px 66px}
+  .about-img{width:340px;height:440px}
+  .footer{max-width:1140px;margin-left:auto;margin-right:auto}
+}
+@media(max-width:899px){
+  .container{width:calc(100% - 30px)}
+  .navbar .container{grid-template-columns:130px 1fr 130px;gap:8px}
+  .brand{font-size:26px}
+  .navlinks{gap:20px}
+  .navlinks a{font-size:10px}
+  .wa-head{font-size:10px;padding:8px 12px}
+  .wa-head b{font-size:12px}
+  .hero-media{aspect-ratio:709/599}
+  .about-card{grid-template-columns:280px 1fr;gap:28px;padding:40px 34px}
+  .about-copy h2{font-size:25px}
+  .about-copy p{font-size:13px}
+  .footer-main{grid-template-columns:1fr 1fr;gap:34px 0}
+  .footer-col{padding:0 12px!important;border-left:0!important}
+  .footer-brand{grid-column:1/-1}
+  .info-grid{grid-template-columns:1fr 1fr}
+  .feature-panel{grid-template-columns:1fr;padding:30px}
+}
+@media(max-width:600px){
+  .navbar .container{grid-template-columns:112px 1fr 108px;gap:4px}
+  .brand{font-size:22px}
+  .navlinks{gap:9px}
+  .navlinks a{font-size:8px}
+  .wa-head{font-size:8px;padding:7px 10px}
+  .wa-head b{font-size:10px}
+  .wa-head .phoneicon{display:grid;place-items:center;width:18px;height:18px;flex:none}.wa-head .phoneicon svg{width:18px;height:18px}
+  .topbar{height:30px;font-size:9px}
+  .topbar .left,.topbar .right{gap:10px}
+  .navbar{height:62px}
+  .hero{padding-top:92px}
+  .hero-arrows{right:10px;gap:8px}
+  .hero-arrows button{width:38px;height:38px;font-size:17px}
+  .hero-dots button{width:34px}
+  .hero-dots button.active{width:44px}
+  .plan{flex-basis:170px}
+  .about-card{min-height:430px;grid-template-columns:190px 1fr;gap:20px;padding:26px 20px;border-radius:28px}
+  .about-img{width:190px;height:310px;border-radius:14px}
+  .about-copy h2{font-size:21px}
+  .about-copy p{font-size:10.5px}
+  .outline-btn{font-size:9px;padding:9px 15px}
+  .why{padding-left:22px;padding-right:22px}
+  .why-title h2{font-size:20px}
+  .why-grid{gap:14px}
+  .why-icon{width:60px;height:60px;font-size:24px;margin-bottom:12px}
+  .why-item h3{font-size:11px}
+  .why-item p{font-size:9px}
+  .footer-main{padding:30px 12px}
+  .footer h3{font-size:11px}
+  .footer li a{font-size:9px}
+  .social a{width:34px;height:34px}
+  .sac{display:none}
+  .page.active{padding-top:130px}
+  .page-head{padding:40px 18px}
+  .page-head h1{font-size:30px}
+  .page-content{padding-left:18px!important;padding-right:18px!important}
+  .info-grid{grid-template-columns:1fr}
+  .footer-legal{flex-direction:column;text-align:center}
+}
+@media(max-width:430px){
+  .navbar .container{grid-template-columns:92px 1fr 90px}
+  .brand{font-size:19px}
+  .navlinks{gap:6px}
+  .navlinks a{font-size:7px}
+  .wa-head{font-size:7px;padding:6px 8px}
+  .wa-head b{font-size:9px}
+  .wa-head .phoneicon{display:none}
+  .about-card{grid-template-columns:150px 1fr;gap:14px;padding:20px 14px}
+  .about-img{width:150px;height:270px}
+  .about-copy h2{font-size:17px}
+  .about-copy p{font-size:9px}
+  .why{padding-left:18px;padding-right:18px}
+  .footer-main{grid-template-columns:1fr!important}
+  .footer-brand{grid-column:auto}
+  .tabs{overflow-x:auto;flex-wrap:nowrap;padding-bottom:6px}
+  .tabs .tab{white-space:nowrap;flex:0 0 auto}
+}
+
+/* ===== LOGO ALARES ===== */
+.logo-text{display:inline-flex;align-items:center;color:#fff;text-decoration:none;white-space:nowrap;line-height:1}
+.alares-logo-img{display:block;width:162px;height:auto;max-width:none;object-fit:contain}
+.footer-logo-text{display:inline-flex;align-items:center;color:#fff;text-decoration:none;line-height:1}
+.alares-logo-footer-img{display:block;width:160px;height:auto;max-width:none;object-fit:contain}
+@media(max-width:600px){.alares-logo-img{width:128px}.alares-logo-footer-img{width:135px}}
+html,body{touch-action:auto}
+
+/* PÁGINAS INTERNAS: sempre encerram com rodapé completo */
+.page.active{display:flex;flex-direction:column;min-height:100vh;padding-top:106px}
+.page.active .page-head,.page.active .page-content{flex:0 0 auto}
+.page.active .page-footer{margin-top:auto;width:calc(100% - 34px);align-self:center;max-width:1140px}
+.page-footer{margin-bottom:18px}
+@media(max-width:700px){
+  .page.active{padding-top:130px}
+  .page.active .page-footer{width:calc(100% - 34px)}
+}
+@media(max-width:430px){
+  .page.active{padding-top:130px}
+  .page.active .page-footer{width:calc(100% - 28px)}
+}
+
+/* ===== AJUSTES RESPONSIVOS / MOBILE ===== */
+.mobile-priority-nav{display:none}
+@media (max-width: 899px){
+  .site-head{position:absolute}
+  .mobile-priority-nav{display:flex;justify-content:center;gap:28px;padding:8px 15px 9px;background:rgba(0,0,0,.18);border-top:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08)}
+  .mobile-priority-nav a{position:relative;padding:4px 0;color:#fff;font-size:9px;font-weight:900;letter-spacing:.03em;white-space:nowrap}
+  .mobile-priority-nav a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:2px;background:var(--green);transition:right var(--t)}
+  .mobile-priority-nav a:hover::after,.mobile-priority-nav a:focus-visible::after{right:0}
+  .mobile-priority-nav a:active{color:var(--green)}
+
+  .navbar .container{grid-template-columns:minmax(0,1fr) auto;gap:12px}
+  .navlinks{display:none!important}
+  .brand{font-size:26px;min-width:0}
+  .logo-text{overflow:hidden}
+  .wa-head{justify-self:end;max-width:180px;font-size:10px;padding:9px 13px}
+  .wa-head b{font-size:11px}
+}
+
+@media (max-width: 600px){
+  .topbar{height:30px;font-size:9px}
+  .topbar .left,.topbar .right{gap:8px}
+  .topbar .right span:first-child{display:none}
+  .topbar .more{font-size:10px}
+  .navbar{height:62px}
+  .navbar .container{grid-template-columns:minmax(0,1fr) auto;gap:10px}
+  .brand{font-size:23px;letter-spacing:-1.5px}
+  .wa-head{font-size:9px;max-width:none;padding:8px 12px;gap:6px}
+  .wa-head b{font-size:10px}
+  .wa-head .phoneicon{display:inline;font-size:12px}
+
+  .mobile-menu{top:134px;right:10px;width:calc(100% - 20px);max-width:360px;padding:10px;border-radius:18px}
+  .mobile-menu a{min-height:46px;display:flex;align-items:center;padding:12px 14px;font-size:13px}
+
+  .hero{padding-top:136px}
+  .hero-media{aspect-ratio:709/599;max-height:none}
+  .hero-arrows{right:8px}
+  .hero-arrows button{width:36px;height:36px}
+
+  .offer-wrap{padding-top:18px}
+  .tabs{gap:8px;padding-left:2px;padding-right:2px}
+  .tab{padding:9px 14px;font-size:10px}
+  .plan-row{gap:12px;padding-left:2px;padding-right:2px}
+  .plan{flex-basis:180px;min-height:350px}
+
+  .channels-wrap{margin-left:10px;margin-right:10px;padding-left:12px;padding-right:12px;border-radius:18px}
+  .channel{flex-basis:205px;padding:13px;min-height:60px}
+
+  .about-section{padding:24px 10px 42px}
+  .about-card{grid-template-columns:1fr;gap:18px;padding:20px;border-radius:24px;min-height:0}
+  .about-img{width:100%;height:210px;border-radius:14px}
+  .about-copy{max-width:none}
+  .about-copy h2{font-size:25px;margin-bottom:10px}
+  .about-copy p{font-size:12px;line-height:1.55;margin-bottom:18px}
+  .outline-btn{font-size:10px;padding:10px 16px}
+
+  .why{padding:0 14px 42px}
+  .why-title{margin-bottom:18px;gap:12px}
+  .why-title h2{font-size:21px}
+  .why-grid{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:minmax(235px,78vw);gap:14px;overflow-x:auto}
+  .why-item{min-width:0}
+  .why-icon{width:58px;height:58px;font-size:23px;margin-bottom:11px}
+  .why-item h3{font-size:13px}
+  .why-item p{font-size:10.5px}
+
+  .footer{margin:24px 10px 12px;border-radius:22px 22px 0 0}
+  .footer-main{padding:28px 16px 24px}
+  .footer-brand{gap:14px}
+  .footer-logo-text{font-size:27px}
+  .footer h3{font-size:12px;margin-bottom:12px}
+  .footer li a{font-size:10px}
+  .footer-legal{padding:14px 16px;font-size:9px}
+
+  .sac{display:none}
+  .float-wa{right:14px;bottom:14px;width:54px;height:54px}.float-wa svg{width:30px;height:30px}
+
+  .page.active{padding-top:136px}
+  .page-head{padding:34px 16px 42px}
+  .page-head h1{font-size:28px}
+  .page-head p{font-size:13px}
+  .page-content{padding:26px 14px!important}
+  .feature-panel{padding:24px;gap:20px}
+  .feature-panel h2,.cta-panel h2,.warning-panel h2{font-size:24px}
+  .info-grid{gap:14px}
+  .info-grid article{padding:20px}
+  .page-card{flex-basis:245px;padding:20px}
+}
+
+@media (max-width: 360px){
+  .mobile-priority-nav{padding-left:10px;padding-right:10px;gap:18px}
+  .mobile-priority-nav a{font-size:8px}
+  .brand{font-size:21px}
+  .wa-head{font-size:8.5px;padding:7px 9px}
+  .wa-head b{font-size:9px}
+  .hero-dots{bottom:8px}
+  .tab{padding:8px 12px;font-size:9px}
+  .plan{flex-basis:174px}
+  .about-card{padding:17px}
+  .about-img{height:190px}
+  .about-copy h2{font-size:22px}
+  .about-copy p{font-size:11px}
+}
+
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+}
+
+.footer-wa svg{width:17px;height:17px;flex:none}.float-wa svg{width:30px;height:30px}@media(max-width:700px){.wa-head .phoneicon svg{width:18px;height:18px}}
+
+.channel .ico{font-size:0;position:relative}
+.channel .ico::before{content:"";display:block;width:22px;height:22px;border:2px solid currentColor;border-radius:6px}
+.channel:nth-child(1) .ico::after{content:"";position:absolute;left:7px;top:4px;width:8px;height:11px;border-top:2px solid currentColor;border-bottom:2px solid currentColor}
+.channel:nth-child(2) .ico::before{border-radius:50%}
+.channel:nth-child(2) .ico::after{content:"";position:absolute;width:10px;height:5px;border:2px solid currentColor;border-bottom:0;border-radius:10px 10px 0 0;left:6px;bottom:1px}
+.channel:nth-child(3) .ico::before{border-radius:50%}
+.channel:nth-child(3) .ico::after{content:"?";position:absolute;inset:0;display:grid;place-items:center;font-size:15px;font-weight:900;color:currentColor}
+@media(max-width:700px){.channel .ico{width:28px;height:28px}.channel .ico::before{width:20px;height:20px}}
+/* ===== CORREÇÃO FINAL DE ESPAÇAMENTO E ENQUADRAMENTO ===== */
+/* Mantém o visual original e elimina apenas os espaços excessivos. */
+@media (min-width:900px){
+  /* Banner maior no PC, mantendo toda a arte visível. */
+  .hero-media{height:760px;max-height:760px;aspect-ratio:auto;overflow:hidden}
+  .hero-slide{object-fit:contain;object-position:center center}
+  .offer-wrap{padding-top:16px;padding-bottom:24px}
+  .tabs{padding-bottom:12px}
+  .about-section{padding-top:24px;padding-bottom:42px}
+  .about-card{min-height:420px;padding:34px 44px;gap:42px}
+  .about-img{height:390px}
+  .why{padding-bottom:42px}
+  .why-title{margin-bottom:20px}
+  .footer{margin-top:20px;margin-bottom:12px}
+  .footer-main{padding-top:32px;padding-bottom:28px}
+}
+@media (min-width:900px){
+  /* A navegação rápida existe somente no mobile. */
+  .mobile-priority-nav{display:none!important}
+}
+/* No mobile, conserva a arte inteira do banner sem cortes. */
+@media (max-width:899px){
+  .hero-media{overflow:hidden}
+  .hero-slide{object-fit:contain;object-position:center center}
+}
+
+/* ===== CONSULTA DE COBERTURA POR CEP ===== */
+.coverage-box{background:#fff;border:1px solid #e6e4f5;border-radius:20px;box-shadow:var(--shadow-md);padding:22px 24px;margin:14px auto 20px;max-width:920px;position:relative;z-index:6}
+.coverage-box h2{font-size:24px;color:#463ee4;margin-bottom:6px;text-align:center}
+.coverage-box p{font-size:12px;color:#6b6b7b;text-align:center;margin-bottom:16px}
+.coverage-form{display:flex;gap:10px;max-width:650px;margin:0 auto}
+.coverage-input{flex:1;min-width:0;height:50px;border:1.5px solid #e6e4f5;border-radius:999px;padding:0 18px;font-size:15px;outline:none;transition:border-color var(--t-fast),box-shadow var(--t-fast)}
+.coverage-input:focus{border-color:var(--purple3);box-shadow:0 0 0 4px rgba(101,85,240,.10)}
+.coverage-btn{height:50px;padding:0 24px;border-radius:999px;background:linear-gradient(135deg,var(--green),var(--green2));color:#07351f;font-size:12px;font-weight:900;letter-spacing:.03em;box-shadow:0 6px 16px rgba(0,196,122,.25);cursor:pointer;transition:transform var(--t-fast),box-shadow var(--t-fast)}
+.coverage-btn:hover{transform:translateY(-1px);box-shadow:0 10px 22px rgba(0,196,122,.35)}
+.coverage-result{display:none;margin-top:14px;padding:13px 15px;border-radius:12px;background:#eafff5;border:1px solid #b9f5d9;color:#0a7a4e;font-size:12px;font-weight:800;text-align:center}
+.coverage-result.show{display:block}
+.coverage-city{display:block;margin-top:3px;font-size:11px;font-weight:700;opacity:.9}
+.coverage-wa{display:none;margin:10px auto 0;width:max-content;max-width:100%;padding:10px 18px;border-radius:999px;background:#25d366;color:#fff;font-size:11px;font-weight:900;text-align:center}
+.coverage-wa.show{display:block}
+@media(max-width:600px){.coverage-box{margin:12px 10px 16px;padding:18px 14px;border-radius:18px}.coverage-box h2{font-size:20px}.coverage-form{flex-direction:column}.coverage-btn{width:100%}.coverage-input{width:100%}}
+/* ===== CORREÇÃO DA IMAGEM "CONHEÇA A ALARES" NO MOBILE ===== */
+@media (max-width: 600px){
+  .about-img{
+    width:100%;
+    height:auto;
+    max-height:none;
+    object-fit:contain;
+    object-position:center center;
+  }
+}
+
+/* ===== IDENTIDADE OFICIAL ALARES ===== */
+h1,h2,h3,.brand,.about-copy h2,.why-title h2,.plan-head strong,.page-card strong,.feature-stat strong,.coverage-box h2{font-family:'Carbona',Inter,-apple-system,"Segoe UI",Arial,sans-serif}
+.service-logo{display:grid;place-items:center;height:46px;margin-bottom:10px;border:1px solid #f0effa;border-radius:8px;background:#fff;padding:6px}
+.service-logo img{max-height:40px;max-width:150px;object-fit:contain}
+.sva-logo{width:56px;height:56px;object-fit:contain;margin-bottom:12px;border-radius:12px;background:#f6f5ff;padding:8px}
+.awards-row{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:center;margin:28px 0 10px}
+.awards-row img{height:58px;width:auto;max-width:220px;object-fit:contain;background:#fff;border:1px solid #eceaf8;border-radius:12px;padding:8px 14px}
+
+
+/* ===== PÁGINA EMPRESAS ===== */
+.empresa-banner{margin:0 0 24px;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-md)}
+.empresa-banner img{width:100%;height:auto;display:block}
+.empresa-cta{display:inline-block;background:linear-gradient(135deg,var(--green),var(--green2));color:#07351f;border-radius:999px;padding:13px 24px;font-weight:900;font-size:11px;letter-spacing:.04em;box-shadow:0 6px 18px rgba(4,214,131,.3);transition:all var(--t-fast)}
+.empresa-cta:hover{transform:translateY(-1px);box-shadow:0 10px 26px rgba(4,214,131,.45);background:#36efa2}
+a.card-btn{display:inline-block;margin-top:auto;background:linear-gradient(135deg,var(--green),var(--green2));color:#07351f;border-radius:999px;padding:12px 22px;font-size:11px;font-weight:900;letter-spacing:.04em;text-align:center;box-shadow:0 4px 12px rgba(4,214,131,.3);transition:all var(--t-fast)}
+a.card-btn:hover{transform:translateY(-1px);box-shadow:0 8px 20px rgba(4,214,131,.4)}
+a.card-btn.light{background:#fff;color:var(--primary)}
+.empresa-contact{margin:24px 0 8px;background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);padding:20px 24px;display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;justify-content:space-between;box-shadow:var(--shadow-sm)}
+.empresa-contact span{font-size:12px;color:var(--muted);font-weight:700}
+.empresa-contact strong{font-size:18px;color:var(--primary);font-family:'Carbona',Inter,Arial,sans-serif}
+.info-grid article{display:flex;flex-direction:column}
+.info-grid article a.card-btn{margin-top:16px}
+@media(max-width:600px){.empresa-contact{flex-direction:column;align-items:stretch;text-align:center}.empresa-contact a{width:100%}}
+
+</style>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2513716242440612');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2513716242440612&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+</head>
+<body>
+
+<header class="site-head">
+  <div class="topbar">
+    <div class="container">
+      <div class="left"><span onclick="openPage(event,'empresa')" role="button" tabindex="0"><i class="dot"></i>PARA EMPRESAS</span></div>
+      <div class="right"><span id="locationLabel" onclick="scrollToCoverage()" role="button" tabindex="0" title="Consultar cobertura por CEP">📍 CONSULTE SEU CEP</span><span class="more" onclick="toggleMenu(event)" role="button" tabindex="0">☰ VEJA MAIS</span></div>
+    </div>
+  </div>
+  <div class="navbar">
+    <div class="container">
+      <a href="#" onclick="goHome(event)" aria-label="Alares - página inicial">
+        <span class="logo-text" aria-label="alares"><img class="alares-logo-img" src="assets/img/logos/logo-white.png" alt="Alares"></span>
+      </a>
+      <nav class="navlinks" aria-label="Principal">
+        <a href="#" onclick="openPage(event,'suporte')">SUPORTE 24H</a>
+        <a href="#" onclick="openPage(event,'fatura')">SEGUNDA VIA DA FATURA</a>
+      </nav>
+      <a class="wa-head" href="#" onclick="openWA(event,'Olá! Vim pelo site e preciso de atendimento.')"><span class="phoneicon"><svg viewBox="0 0 32 32" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M19.11 17.21c-.27-.14-1.59-.79-1.84-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.02-.22-.53-.44-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.95.93-.95 2.27 0 1.34.97 2.63 1.11 2.81.14.18 1.91 2.92 4.63 4.09.65.28 1.16.45 1.56.58.65.21 1.24.18 1.71.11.52-.08 1.59-.65 1.81-1.28.23-.63.23-1.18.16-1.29-.07-.11-.25-.18-.52-.32z"/><path d="M16.02 3C8.84 3 3 8.84 3 16c0 2.28.59 4.42 1.63 6.29L3 29l6.86-1.58A12.94 12.94 0 0 0 16.02 29C23.2 29 29 23.16 29 16S23.2 3 16.02 3zm0 23.7c-2.11 0-4.07-.62-5.72-1.69l-.41-.25-4.07.94.96-3.96-.27-.42A10.7 10.7 0 1 1 16.02 26.7z"/></svg></span> <b>(15) 2121-0619</b></a>
+    </div>
+    <nav class="mobile-priority-nav" aria-label="Atendimento rápido no celular">
+      <a href="#" onclick="openPage(event,'suporte')">SUPORTE 24H</a>
+      <a href="#" onclick="openPage(event,'fatura')">2ª VIA DA FATURA</a>
+    </nav>
+  </div>
+</header>
+
+<main id="home">
+  <section class="hero">
+    <div class="hero-media" id="heroMedia">
+      <img draggable="false" class="hero-slide active" src="assets/img/banners/banner-oferta-black.png" alt="Oferta Alares 1 Giga Globoplay">
+      <img draggable="false" class="hero-slide" src="assets/img/banners/banner-app.png" alt="Oferta Alares Play Studio 800 Mega">
+      <div class="hero-arrows">
+        <button onclick="nextSlide(1)" aria-label="Próximo">→</button>
+        <button onclick="nextSlide(-1)" aria-label="Anterior">←</button>
+      </div>
+      <div class="hero-dots">
+        <button class="active" onclick="showSlide(0)" aria-label="Oferta 1"></button>
+        <button onclick="showSlide(1)" aria-label="Oferta 2"></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="coverage-box" aria-labelledby="coverageTitle">
+    <h2 id="coverageTitle">Consulte a cobertura no seu CEP</h2>
+    <p id="coverageSubtitle">Digite seu CEP e confira a disponibilidade de internet.</p>
+    <form class="coverage-form" id="coverageForm">
+      <input id="coverageCep" class="coverage-input" type="text" inputmode="numeric" autocomplete="postal-code" maxlength="9" placeholder="Digite seu CEP" aria-label="CEP" required>
+      <button class="coverage-btn" type="submit">CONSULTAR COBERTURA</button>
+    </form>
+    <div id="coverageResult" class="coverage-result" role="status" aria-live="polite"></div>
+    <a id="coverageWhatsApp" class="coverage-wa" href="#">FALAR NO WHATSAPP</a>
+  </section>
+
+  <section class="offer-wrap">
+    <div class="tabs">
+      <button class="tab active" type="button" aria-pressed="true">♨ Destaques</button>
+      <button class="tab" type="button" aria-pressed="false">▣ Alares Play</button>
+      <button class="tab" type="button" aria-pressed="false">✈ Mais Combos</button>
+      <button id="locationPlanTab" class="tab" type="button" aria-pressed="false">⌖ Planos para o local informado</button>
+    </div>
+    <div class="plan-row">
+      <article class="plan">
+        <span class="exclusive">Oferta Exclusiva no site</span>
+        <div class="plan-head"><small>DESTAQUES</small><strong>1 Giga</strong></div>
+        <div class="plan-body"><div class="included">Serviços inclusos:</div><div class="service-logo"><img src="assets/img/servicos/logo-globoplay.png" alt="Globoplay"></div><div class="plan-feature">◉ Wi‑Fi 6</div><div class="plan-price">R$ 99,99*</div><div class="plan-note">*com fatura digital em dia</div><button class="contract" onclick="openWA(event,'Quero contratar o plano 1 Giga com Globoplay.',true)">CONTRATAR</button><a class="saiba" href="#" onclick="openWA(event,'Quero saber mais sobre o plano 1 Giga Globoplay.',true)">SAIBA MAIS</a></div>
+      </article>
+      <article class="plan">
+        <div class="plan-head"><small>DESTAQUES</small><strong>1 Giga</strong></div>
+        <div class="plan-body"><div class="included">Serviços inclusos:</div><div class="service-logo"><img src="assets/img/servicos/logo-hbomax.png" alt="HBO Max"></div><div class="plan-feature">◉ Wi‑Fi 6</div><div class="plan-feature">◉ 21 canais</div><div class="plan-price">R$ 119,99*</div><div class="plan-note">*com fatura digital em dia</div><button class="contract" onclick="openWA(event,'Quero contratar o plano 1 Giga com HBO Max.',true)">CONTRATAR</button><a class="saiba" href="#" onclick="openWA(event,'Quero saber mais sobre o plano 1 Giga HBO Max.',true)">SAIBA MAIS</a></div>
+      </article>
+      <article class="plan">
+        <div class="plan-head"><small>DESTAQUES</small><strong>1 Giga<br>Gamer</strong></div>
+        <div class="plan-body"><div class="included">Serviços inclusos:</div><div class="service orange">EXITLAG</div><div class="plan-feature">◉ Wi‑Fi 6</div><div class="plan-price">R$ 139,99*</div><div class="plan-note">*com fatura digital em dia</div><button class="contract" onclick="openWA(event,'Quero contratar o plano 1 Giga Gamer.',true)">CONTRATAR</button><a class="saiba" href="#" onclick="openWA(event,'Quero saber mais sobre o plano 1 Giga Gamer.',true)">SAIBA MAIS</a></div>
+      </article>
+      <article class="plan more-offer"><div><span class="mark">➤</span><div style="margin-bottom:13px">Não encontrou a oferta ideal?</div><a href="#" onclick="openWA(event,'Quero ver todas as ofertas disponíveis.',true)"><u>VER TODAS AS OFERTAS</u></a></div></article>
+    </div>
+  </section>
+
+  <section class="channels-wrap">
+    <div class="section-ribbon">CANAIS DE ATENDIMENTO</div>
+    <div class="channels">
+      <a class="channel" href="#" onclick="openWA(event,'Preciso da 2ª via do boleto.')"><span class="ico">▤</span><b>2ª VIA DO BOLETO</b><span class="arrow">→</span></a>
+      <a class="channel" href="#" onclick="openWA(event,'Preciso falar com a Central do assinante.')"><span class="ico">♙</span><b>CENTRAL DO<br>ASSINANTE</b><span class="arrow">→</span></a>
+      <a class="channel" href="#" onclick="openWA(event,'Tenho uma pergunta sobre a Alares.')"><span class="ico">□</span><b>PERGUNTAS<br>FREQUENTES</b><span class="arrow">→</span></a>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="about-card">
+      <img draggable="false" class="about-img" src="assets/img/fotos/foto-tecnico.png" alt="Profissionais usando tecnologia e tablet">
+      <div class="about-copy">
+        <h2>Conheça a Alares</h2>
+        <p>Estamos em 232 cidades, em 7 estados do Brasil, com a missão de empoderar as pessoas para que possam ir cada vez mais longe. A nossa ultra banda larga está presente em mais de 800.000 lares e empresas em todo o país.</p>
+        <button class="outline-btn" onclick="openWA(event,'Quero falar com a Alares.',true)">FALE CONOSCO</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="why">
+    <div class="why-title"><h2>Por que a Alares?</h2><div class="arrows"><button class="why-arrow" type="button" onclick="scrollWhy(-1)" aria-label="Anterior">←</button><button class="why-arrow" type="button" onclick="scrollWhy(1)" aria-label="Próximo">→</button></div></div>
+    <div class="why-grid">
+      <article class="why-item"><div class="why-icon">♛</div><h3>Prêmios pela excelência</h3><p>Descubra alguns prêmios e reconhecimentos que conquistamos ao longo do tempo, em diferentes cidades e estados do país.</p></article>
+      <article class="why-item"><div class="why-icon">⌕</div><h3>100% Fibra Óptica até você</h3><p>Com mais de 32 mil quilômetros de extensão, nossa fibra óptica permite entregar planos de internet com até 2 giga de velocidade.</p></article>
+      <article class="why-item"><div class="why-icon">☁</div><h3>Planos mais completos</h3><p>Em nossos planos estão incluídos aplicativos de entretenimento e utilidades, como filmes, séries, livros, revistas, segurança digital e muito mais.</p></article>
+      <article class="why-item"><div class="why-icon">$</div><h3>Sem taxas, sem letras miúdas</h3><p>Não cobramos taxa de instalação nem de adesão ao nosso serviço. Você não precisa se preocupar com surpresas na sua conta.</p></article>
+    </div>
+  </section>
+
+  <footer class="footer">
+  <div class="footer-main">
+    <div class="footer-col footer-brand">
+      <a href="#" onclick="goHome(event)" class="footer-logo-text" aria-label="Alares - página inicial"><img class="alares-logo-footer-img" src="assets/img/logos/logo-white.png" alt="Alares"></a>
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=61594459374025" target="_blank" rel="noopener" aria-label="Facebook Alares">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+        </a>
+      </div>
+      <a href="#" class="footer-wa" onclick="openWA(event,'Olá! Vim pelo site e quero falar com a Alares.')">
+        <svg viewBox="0 0 32 32" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M19.11 17.21c-.27-.14-1.59-.79-1.84-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.02-.22-.53-.44-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.95.93-.95 2.27 0 1.34.97 2.63 1.11 2.81.14.18 1.91 2.92 4.63 4.09.65.28 1.16.45 1.56.58.65.21 1.24.18 1.71.11.52-.08 1.59-.65 1.81-1.28.23-.63.23-1.18.16-1.29-.07-.11-.25-.18-.52-.32z"/><path d="M16.02 3C8.84 3 3 8.84 3 16c0 2.28.59 4.42 1.63 6.29L3 29l6.86-1.58A12.94 12.94 0 0 0 16.02 29C23.2 29 29 23.16 29 16S23.2 3 16.02 3zm0 23.7c-2.11 0-4.07-.62-5.72-1.69l-.41-.25-4.07.94.96-3.96-.27-.42A10.7 10.7 0 1 1 16.02 26.7z"/></svg>
+        WHATSAPP · (15) 2121-0619
+      </a>
+    </div>
+    <div class="footer-col"><h3>A Alares</h3><ul>
+      <li><a href="#" onclick="openPage(event,'conheca')">Conheça a Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'trabalhe')">Trabalhe Conosco</a></li>
+      <li><a href="#" onclick="openPage(event,'blog')">Blog Indo Além</a></li>
+      <li><a href="#" onclick="openPage(event,'loja')">Encontre uma loja</a></li>
+      <li><a href="#" onclick="openPage(event,'esg')">ESG na Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'etica')">Canal de Ética</a></li>
+      <li><a href="#" onclick="openPage(event,'ri')">Relação com investidores</a></li>
+      <li><a href="#" onclick="openPage(event,'imprensa')">Sala de imprensa</a></li>
+      <li><a href="#" onclick="openPage(event,'materiais')">Materiais de apoio</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para você</h3><ul>
+      <li><a href="#" onclick="openPage(event,'planos')">Planos de internet</a></li>
+      <li><a href="#" onclick="openPage(event,'digitais')">+ Conteúdos</a></li>
+      <li><a href="#" onclick="openPage(event,'fatura')">2ª via do boleto</a></li>
+      <li><a href="#" onclick="openPage(event,'auto')">Autoatendimento</a></li>
+      <li><a href="#" onclick="openPage(event,'central')">Central do assinante</a></li>
+      <li><a href="#" onclick="openPage(event,'contratos')">Contratos e regulamentos</a></li>
+      <li><a href="#" onclick="openPage(event,'negociacao')">Portal de negociação</a></li>
+      <li><a href="#" onclick="openPage(event,'fraude')">Prevenção a fraude</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para sua empresa</h3><ul>
+      <li><a href="#" onclick="openPage(event,'empresa')">Pequenas e médias empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Grandes empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Governo</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Atacado</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-legal"><a href="#" onclick="openPage(event,'privacidade')">Políticas de privacidade e cookies</a><span>© Alares</span></div>
+</footer>
+</main>
+
+<!-- ===== PÁGINAS INTERNAS ===== -->
+<section id="page-conheca" class="page"><div class="page-head"><div class="container"><a href="#" class="page-back" onclick="goHome(event)">← Voltar</a><h1>Conheça a Alares</h1><p>Internet que te leva mais longe. Conectividade para pessoas, casas e empresas.</p></div></div><div class="page-content"><div class="feature-panel"><div><span class="eyebrow" style="color:var(--green);font-weight:900;letter-spacing:2px;font-size:11px;display:inline-block;margin-bottom:10px">A ALARES</span><h2>Mais perto de você</h2><p>Estamos em 232 cidades, em 7 estados do Brasil, com a missão de empoderar as pessoas para que possam ir cada vez mais longe. Nossa ultra banda larga está presente em mais de 800.000 lares e empresas.</p><button onclick="openWA(event,'Olá! Quero falar com a Alares.',true)">FALE CONOSCO</button></div><div class="feature-stat"><strong>32 mil+</strong><span>km de fibra óptica</span><strong>120+</strong><span>lojas físicas</span></div></div><div class="info-grid"><article><h3>100% Fibra Óptica</h3><p>Rede de última geração para entregar conexão de alta velocidade.</p></article><article><h3>Planos completos</h3><p>Opções com entretenimento, utilidades e segurança digital.</p></article><article><h3>Sem taxas</h3><p>Sem taxa de instalação nem de adesão ao serviço.</p></article><article><h3>Estamos perto</h3><p>Presença em diferentes cidades e estados do Brasil.</p></article></div></div><div class="awards-row">
+  <img src="assets/img/premios/selo-great-place.png" alt="Great Place to Work certificada Mai/2025 - Mai/2026">
+  <img src="assets/img/premios/selo-smart-customer.png" alt="Prêmio Smart Customer">
+  <img src="assets/img/premios/selo-anatel.png" alt="Reconhecimento Anatel">
+  <img src="assets/img/premios/selo-abt.png" alt="Prêmio ABT">
+  <img src="assets/img/premios/selo-abemd.png" alt="Prêmio ABEMD">
+</div>
+  <footer class="footer page-footer">
+  <div class="footer-main">
+    <div class="footer-col footer-brand">
+      <a href="#" onclick="goHome(event)" class="footer-logo-text" aria-label="Alares - página inicial"><img class="alares-logo-footer-img" src="assets/img/logos/logo-white.png" alt="Alares"></a>
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=61594459374025" target="_blank" rel="noopener" aria-label="Facebook Alares">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+        </a>
+      </div>
+      <a href="#" class="footer-wa" onclick="openWA(event,'Olá! Vim pelo site e quero falar com a Alares.')">
+        <svg viewBox="0 0 32 32" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M19.11 17.21c-.27-.14-1.59-.79-1.84-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.02-.22-.53-.44-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.95.93-.95 2.27 0 1.34.97 2.63 1.11 2.81.14.18 1.91 2.92 4.63 4.09.65.28 1.16.45 1.56.58.65.21 1.24.18 1.71.11.52-.08 1.59-.65 1.81-1.28.23-.63.23-1.18.16-1.29-.07-.11-.25-.18-.52-.32z"/><path d="M16.02 3C8.84 3 3 8.84 3 16c0 2.28.59 4.42 1.63 6.29L3 29l6.86-1.58A12.94 12.94 0 0 0 16.02 29C23.2 29 29 23.16 29 16S23.2 3 16.02 3zm0 23.7c-2.11 0-4.07-.62-5.72-1.69l-.41-.25-4.07.94.96-3.96-.27-.42A10.7 10.7 0 1 1 16.02 26.7z"/></svg>
+        WHATSAPP · (15) 2121-0619
+      </a>
+    </div>
+    <div class="footer-col"><h3>A Alares</h3><ul>
+      <li><a href="#" onclick="openPage(event,'conheca')">Conheça a Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'trabalhe')">Trabalhe Conosco</a></li>
+      <li><a href="#" onclick="openPage(event,'blog')">Blog Indo Além</a></li>
+      <li><a href="#" onclick="openPage(event,'loja')">Encontre uma loja</a></li>
+      <li><a href="#" onclick="openPage(event,'esg')">ESG na Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'etica')">Canal de Ética</a></li>
+      <li><a href="#" onclick="openPage(event,'ri')">Relação com investidores</a></li>
+      <li><a href="#" onclick="openPage(event,'imprensa')">Sala de imprensa</a></li>
+      <li><a href="#" onclick="openPage(event,'materiais')">Materiais de apoio</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para você</h3><ul>
+      <li><a href="#" onclick="openPage(event,'planos')">Planos de internet</a></li>
+      <li><a href="#" onclick="openPage(event,'digitais')">+ Conteúdos</a></li>
+      <li><a href="#" onclick="openPage(event,'fatura')">2ª via do boleto</a></li>
+      <li><a href="#" onclick="openPage(event,'auto')">Autoatendimento</a></li>
+      <li><a href="#" onclick="openPage(event,'central')">Central do assinante</a></li>
+      <li><a href="#" onclick="openPage(event,'contratos')">Contratos e regulamentos</a></li>
+      <li><a href="#" onclick="openPage(event,'negociacao')">Portal de negociação</a></li>
+      <li><a href="#" onclick="openPage(event,'fraude')">Prevenção a fraude</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para sua empresa</h3><ul>
+      <li><a href="#" onclick="openPage(event,'empresa')">Pequenas e médias empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Grandes empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Governo</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Atacado</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-legal"><a href="#" onclick="openPage(event,'privacidade')">Políticas de privacidade e cookies</a><span>© Alares</span></div>
+</footer></section>
+
+<section id="page-trabalhe" class="page"><div class="page-head"><div class="container"><a href="#" class="page-back" onclick="goHome(event)">← Voltar</a><h1>Trabalhe Conosco</h1><p>Faça parte de um time que leva conexão cada vez mais longe.</p></div></div><div class="page-content"><div class="feature-panel"><div><h2>Seu próximo passo pode começar aqui</h2><p>Conheça as oportunidades da Alares e fale com nossa equipe para receber orientação sobre vagas e processos seletivos.</p><button onclick="openWA(event,'Olá! Quero informações sobre Trabalhe Conosco na Alares.')">QUERO SABER MAIS</button></div><div class="feature-stat"><strong>Time Alares</strong><span>pessoas, tecnologia e conexão</span><strong>Carreira</strong><span>oportunidades em diferentes áreas</span></div></div></div><footer class="footer page-footer">
+  <div class="footer-main">
+    <div class="footer-col footer-brand">
+      <a href="#" onclick="goHome(event)" class="footer-logo-text" aria-label="Alares - página inicial"><img class="alares-logo-footer-img" src="assets/img/logos/logo-white.png" alt="Alares"></a>
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=61594459374025" target="_blank" rel="noopener" aria-label="Facebook Alares">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+        </a>
+      </div>
+      <a href="#" class="footer-wa" onclick="openWA(event,'Olá! Vim pelo site e quero falar com a Alares.')">
+        <svg viewBox="0 0 32 32" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M19.11 17.21c-.27-.14-1.59-.79-1.84-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.02-.22-.53-.44-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.95.93-.95 2.27 0 1.34.97 2.63 1.11 2.81.14.18 1.91 2.92 4.63 4.09.65.28 1.16.45 1.56.58.65.21 1.24.18 1.71.11.52-.08 1.59-.65 1.81-1.28.23-.63.23-1.18.16-1.29-.07-.11-.25-.18-.52-.32z"/><path d="M16.02 3C8.84 3 3 8.84 3 16c0 2.28.59 4.42 1.63 6.29L3 29l6.86-1.58A12.94 12.94 0 0 0 16.02 29C23.2 29 29 23.16 29 16S23.2 3 16.02 3zm0 23.7c-2.11 0-4.07-.62-5.72-1.69l-.41-.25-4.07.94.96-3.96-.27-.42A10.7 10.7 0 1 1 16.02 26.7z"/></svg>
+        WHATSAPP · (15) 2121-0619
+      </a>
+    </div>
+    <div class="footer-col"><h3>A Alares</h3><ul>
+      <li><a href="#" onclick="openPage(event,'conheca')">Conheça a Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'trabalhe')">Trabalhe Conosco</a></li>
+      <li><a href="#" onclick="openPage(event,'blog')">Blog Indo Além</a></li>
+      <li><a href="#" onclick="openPage(event,'loja')">Encontre uma loja</a></li>
+      <li><a href="#" onclick="openPage(event,'esg')">ESG na Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'etica')">Canal de Ética</a></li>
+      <li><a href="#" onclick="openPage(event,'ri')">Relação com investidores</a></li>
+      <li><a href="#" onclick="openPage(event,'imprensa')">Sala de imprensa</a></li>
+      <li><a href="#" onclick="openPage(event,'materiais')">Materiais de apoio</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para você</h3><ul>
+      <li><a href="#" onclick="openPage(event,'planos')">Planos de internet</a></li>
+      <li><a href="#" onclick="openPage(event,'digitais')">+ Conteúdos</a></li>
+      <li><a href="#" onclick="openPage(event,'fatura')">2ª via do boleto</a></li>
+      <li><a href="#" onclick="openPage(event,'auto')">Autoatendimento</a></li>
+      <li><a href="#" onclick="openPage(event,'central')">Central do assinante</a></li>
+      <li><a href="#" onclick="openPage(event,'contratos')">Contratos e regulamentos</a></li>
+      <li><a href="#" onclick="openPage(event,'negociacao')">Portal de negociação</a></li>
+      <li><a href="#" onclick="openPage(event,'fraude')">Prevenção a fraude</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para sua empresa</h3><ul>
+      <li><a href="#" onclick="openPage(event,'empresa')">Pequenas e médias empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Grandes empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Governo</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Atacado</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-legal"><a href="#" onclick="openPage(event,'privacidade')">Políticas de privacidade e cookies</a><span>© Alares</span></div>
+</footer></section>
+
+<section id="page-blog" class="page"><div class="page-head"><div class="container"><a href="#" class="page-back" onclick="goHome(event)">← Voltar</a><h1>Blog Indo Além</h1><p>Conteúdos para aproveitar melhor a internet, tecnologia e vida digital.</p></div></div><div class="page-content"><div class="info-grid"><article><span class="eyebrow">TECNOLOGIA</span><h3>Internet para sua rotina</h3><p>Dicas para trabalhar, estudar, assistir e navegar com mais qualidade.</p><button onclick="openWA(event,'Quero acessar o Blog Indo Além.')">ACESSAR</button></article><article><span class="eyebrow">SEGURANÇA</span><h3>Proteja sua vida digital</h3><p>Boas práticas para seus dispositivos, contas e conexão.</p><button onclick="openWA(event,'Quero conteúdos de segurança digital da Alares.')">SAIBA MAIS</button></article><article><span class="eyebrow">ENTRETENIMENTO</span><h3>Conteúdos para curtir</h3><p>Descubra serviços digitais e novas formas de aproveitar sua internet.</p><button onclick="openWA(event,'Quero conhecer os conteúdos e serviços digitais da Alares.')">SAIBA MAIS</button></article></div></div><footer class="footer page-footer">
+  <div class="footer-main">
+    <div class="footer-col footer-brand">
+      <a href="#" onclick="goHome(event)" class="footer-logo-text" aria-label="Alares - página inicial"><img class="alares-logo-footer-img" src="assets/img/logos/logo-white.png" alt="Alares"></a>
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=61594459374025" target="_blank" rel="noopener" aria-label="Facebook Alares">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+        </a>
+      </div>
+      <a href="#" class="footer-wa" onclick="openWA(event,'Olá! Vim pelo site e quero falar com a Alares.')">
+        <svg viewBox="0 0 32 32" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M19.11 17.21c-.27-.14-1.59-.79-1.84-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.02-.22-.53-.44-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.95.93-.95 2.27 0 1.34.97 2.63 1.11 2.81.14.18 1.91 2.92 4.63 4.09.65.28 1.16.45 1.56.58.65.21 1.24.18 1.71.11.52-.08 1.59-.65 1.81-1.28.23-.63.23-1.18.16-1.29-.07-.11-.25-.18-.52-.32z"/><path d="M16.02 3C8.84 3 3 8.84 3 16c0 2.28.59 4.42 1.63 6.29L3 29l6.86-1.58A12.94 12.94 0 0 0 16.02 29C23.2 29 29 23.16 29 16S23.2 3 16.02 3zm0 23.7c-2.11 0-4.07-.62-5.72-1.69l-.41-.25-4.07.94.96-3.96-.27-.42A10.7 10.7 0 1 1 16.02 26.7z"/></svg>
+        WHATSAPP · (15) 2121-0619
+      </a>
+    </div>
+    <div class="footer-col"><h3>A Alares</h3><ul>
+      <li><a href="#" onclick="openPage(event,'conheca')">Conheça a Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'trabalhe')">Trabalhe Conosco</a></li>
+      <li><a href="#" onclick="openPage(event,'blog')">Blog Indo Além</a></li>
+      <li><a href="#" onclick="openPage(event,'loja')">Encontre uma loja</a></li>
+      <li><a href="#" onclick="openPage(event,'esg')">ESG na Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'etica')">Canal de Ética</a></li>
+      <li><a href="#" onclick="openPage(event,'ri')">Relação com investidores</a></li>
+      <li><a href="#" onclick="openPage(event,'imprensa')">Sala de imprensa</a></li>
+      <li><a href="#" onclick="openPage(event,'materiais')">Materiais de apoio</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para você</h3><ul>
+      <li><a href="#" onclick="openPage(event,'planos')">Planos de internet</a></li>
+      <li><a href="#" onclick="openPage(event,'digitais')">+ Conteúdos</a></li>
+      <li><a href="#" onclick="openPage(event,'fatura')">2ª via do boleto</a></li>
+      <li><a href="#" onclick="openPage(event,'auto')">Autoatendimento</a></li>
+      <li><a href="#" onclick="openPage(event,'central')">Central do assinante</a></li>
+      <li><a href="#" onclick="openPage(event,'contratos')">Contratos e regulamentos</a></li>
+      <li><a href="#" onclick="openPage(event,'negociacao')">Portal de negociação</a></li>
+      <li><a href="#" onclick="openPage(event,'fraude')">Prevenção a fraude</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para sua empresa</h3><ul>
+      <li><a href="#" onclick="openPage(event,'empresa')">Pequenas e médias empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Grandes empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Governo</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Atacado</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-legal"><a href="#" onclick="openPage(event,'privacidade')">Políticas de privacidade e cookies</a><span>© Alares</span></div>
+</footer></section>
+
+<section id="page-loja" class="page"><div class="page-head"><div class="container"><a href="#" class="page-back" onclick="goHome(event)">← Voltar</a><h1>Encontre uma loja</h1><p>Procure uma unidade Alares na sua região ou fale com nossa equipe.</p></div></div><div class="page-content"><div class="feature-panel"><div><h2>Estamos perto de você</h2><p>A Alares conta com lojas físicas dentro de suas áreas de atuação. Para saber qual unidade atende sua região, informe sua cidade pelo WhatsApp.</p><button onclick="openWA(event,'Olá! Quero encontrar uma loja Alares na minha região.')">ENCONTRAR LOJA</button></div><div class="feature-stat"><strong>120+</strong><span>lojas físicas</span><strong>232</strong><span>cidades atendidas</span></div></div></div><footer class="footer page-footer">
+  <div class="footer-main">
+    <div class="footer-col footer-brand">
+      <a href="#" onclick="goHome(event)" class="footer-logo-text" aria-label="Alares - página inicial"><img class="alares-logo-footer-img" src="assets/img/logos/logo-white.png" alt="Alares"></a>
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=61594459374025" target="_blank" rel="noopener" aria-label="Facebook Alares">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+        </a>
+      </div>
+      <a href="#" class="footer-wa" onclick="openWA(event,'Olá! Vim pelo site e quero falar com a Alares.')">
+        <svg viewBox="0 0 32 32" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M19.11 17.21c-.27-.14-1.59-.79-1.84-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.02-.22-.53-.44-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.95.93-.95 2.27 0 1.34.97 2.63 1.11 2.81.14.18 1.91 2.92 4.63 4.09.65.28 1.16.45 1.56.58.65.21 1.24.18 1.71.11.52-.08 1.59-.65 1.81-1.28.23-.63.23-1.18.16-1.29-.07-.11-.25-.18-.52-.32z"/><path d="M16.02 3C8.84 3 3 8.84 3 16c0 2.28.59 4.42 1.63 6.29L3 29l6.86-1.58A12.94 12.94 0 0 0 16.02 29C23.2 29 29 23.16 29 16S23.2 3 16.02 3zm0 23.7c-2.11 0-4.07-.62-5.72-1.69l-.41-.25-4.07.94.96-3.96-.27-.42A10.7 10.7 0 1 1 16.02 26.7z"/></svg>
+        WHATSAPP · (15) 2121-0619
+      </a>
+    </div>
+    <div class="footer-col"><h3>A Alares</h3><ul>
+      <li><a href="#" onclick="openPage(event,'conheca')">Conheça a Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'trabalhe')">Trabalhe Conosco</a></li>
+      <li><a href="#" onclick="openPage(event,'blog')">Blog Indo Além</a></li>
+      <li><a href="#" onclick="openPage(event,'loja')">Encontre uma loja</a></li>
+      <li><a href="#" onclick="openPage(event,'esg')">ESG na Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'etica')">Canal de Ética</a></li>
+      <li><a href="#" onclick="openPage(event,'ri')">Relação com investidores</a></li>
+      <li><a href="#" onclick="openPage(event,'imprensa')">Sala de imprensa</a></li>
+      <li><a href="#" onclick="openPage(event,'materiais')">Materiais de apoio</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para você</h3><ul>
+      <li><a href="#" onclick="openPage(event,'planos')">Planos de internet</a></li>
+      <li><a href="#" onclick="openPage(event,'digitais')">+ Conteúdos</a></li>
+      <li><a href="#" onclick="openPage(event,'fatura')">2ª via do boleto</a></li>
+      <li><a href="#" onclick="openPage(event,'auto')">Autoatendimento</a></li>
+      <li><a href="#" onclick="openPage(event,'central')">Central do assinante</a></li>
+      <li><a href="#" onclick="openPage(event,'contratos')">Contratos e regulamentos</a></li>
+      <li><a href="#" onclick="openPage(event,'negociacao')">Portal de negociação</a></li>
+      <li><a href="#" onclick="openPage(event,'fraude')">Prevenção a fraude</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para sua empresa</h3><ul>
+      <li><a href="#" onclick="openPage(event,'empresa')">Pequenas e médias empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Grandes empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Governo</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Atacado</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-legal"><a href="#" onclick="openPage(event,'privacidade')">Políticas de privacidade e cookies</a><span>© Alares</span></div>
+</footer></section>
+
+<section id="page-esg" class="page"><div class="page-head"><div class="container"><a href="#" class="page-back" onclick="goHome(event)">← Voltar</a><h1>ESG na Alares</h1><p>Conheça os compromissos da Alares com pessoas, sociedade, governança e sustentabilidade.</p></div></div><div class="page-content"><div class="info-grid"><article><h3>Ambiental</h3><p>Iniciativas para uma operação mais responsável e consciente.</p></article><article><h3>Social</h3><p>Ações voltadas às pessoas, comunidades e inclusão digital.</p></article><article><h3>Governança</h3><p>Compromisso com ética, transparência e responsabilidade.</p></article></div><div class="cta-panel" style="margin-top:24px"><h2>Quer conhecer mais?</h2><p>Fale com nossa equipe e receba informações sobre nossas iniciativas ESG.</p><button onclick="openWA(event,'Quero saber mais sobre ESG na Alares.')">FALAR COM A ALARES</button></div></div><footer class="footer page-footer">
+  <div class="footer-main">
+    <div class="footer-col footer-brand">
+      <a href="#" onclick="goHome(event)" class="footer-logo-text" aria-label="Alares - página inicial"><img class="alares-logo-footer-img" src="assets/img/logos/logo-white.png" alt="Alares"></a>
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=61594459374025" target="_blank" rel="noopener" aria-label="Facebook Alares">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+        </a>
+      </div>
+      <a href="#" class="footer-wa" onclick="openWA(event,'Olá! Vim pelo site e quero falar com a Alares.')">
+        <svg viewBox="0 0 32 32" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M19.11 17.21c-.27-.14-1.59-.79-1.84-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.02-.22-.53-.44-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.95.93-.95 2.27 0 1.34.97 2.63 1.11 2.81.14.18 1.91 2.92 4.63 4.09.65.28 1.16.45 1.56.58.65.21 1.24.18 1.71.11.52-.08 1.59-.65 1.81-1.28.23-.63.23-1.18.16-1.29-.07-.11-.25-.18-.52-.32z"/><path d="M16.02 3C8.84 3 3 8.84 3 16c0 2.28.59 4.42 1.63 6.29L3 29l6.86-1.58A12.94 12.94 0 0 0 16.02 29C23.2 29 29 23.16 29 16S23.2 3 16.02 3zm0 23.7c-2.11 0-4.07-.62-5.72-1.69l-.41-.25-4.07.94.96-3.96-.27-.42A10.7 10.7 0 1 1 16.02 26.7z"/></svg>
+        WHATSAPP · (15) 2121-0619
+      </a>
+    </div>
+    <div class="footer-col"><h3>A Alares</h3><ul>
+      <li><a href="#" onclick="openPage(event,'conheca')">Conheça a Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'trabalhe')">Trabalhe Conosco</a></li>
+      <li><a href="#" onclick="openPage(event,'blog')">Blog Indo Além</a></li>
+      <li><a href="#" onclick="openPage(event,'loja')">Encontre uma loja</a></li>
+      <li><a href="#" onclick="openPage(event,'esg')">ESG na Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'etica')">Canal de Ética</a></li>
+      <li><a href="#" onclick="openPage(event,'ri')">Relação com investidores</a></li>
+      <li><a href="#" onclick="openPage(event,'imprensa')">Sala de imprensa</a></li>
+      <li><a href="#" onclick="openPage(event,'materiais')">Materiais de apoio</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para você</h3><ul>
+      <li><a href="#" onclick="openPage(event,'planos')">Planos de internet</a></li>
+      <li><a href="#" onclick="openPage(event,'digitais')">+ Conteúdos</a></li>
+      <li><a href="#" onclick="openPage(event,'fatura')">2ª via do boleto</a></li>
+      <li><a href="#" onclick="openPage(event,'auto')">Autoatendimento</a></li>
+      <li><a href="#" onclick="openPage(event,'central')">Central do assinante</a></li>
+      <li><a href="#" onclick="openPage(event,'contratos')">Contratos e regulamentos</a></li>
+      <li><a href="#" onclick="openPage(event,'negociacao')">Portal de negociação</a></li>
+      <li><a href="#" onclick="openPage(event,'fraude')">Prevenção a fraude</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para sua empresa</h3><ul>
+      <li><a href="#" onclick="openPage(event,'empresa')">Pequenas e médias empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Grandes empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Governo</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Atacado</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-legal"><a href="#" onclick="openPage(event,'privacidade')">Políticas de privacidade e cookies</a><span>© Alares</span></div>
+</footer></section>
+
+<section id="page-etica" class="page"><div class="page-head"><div class="container"><a href="#" class="page-back" onclick="goHome(event)">← Voltar</a><h1>Canal de Ética</h1><p>Um canal institucional para relatos, dúvidas e orientações relacionadas à ética e conduta.</p></div></div><div class="page-content"><div class="feature-panel"><div><h2>Ética e transparência</h2><p>Use o canal apropriado para comunicar uma situação ou buscar orientação. Fale com nossa equipe pelo WhatsApp.</p><button onclick="openWA(event,'Olá! Quero informações sobre o Canal de Ética da Alares.')">ACESSAR CANAL</button></div><div class="feature-stat"><strong>Ética</strong><span>respeito e responsabilidade</span><strong>Transparência</strong><span>conduta e confiança</span></div></div></div><footer class="footer page-footer">
+  <div class="footer-main">
+    <div class="footer-col footer-brand">
+      <a href="#" onclick="goHome(event)" class="footer-logo-text" aria-label="Alares - página inicial"><img class="alares-logo-footer-img" src="assets/img/logos/logo-white.png" alt="Alares"></a>
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=61594459374025" target="_blank" rel="noopener" aria-label="Facebook Alares">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+        </a>
+      </div>
+      <a href="#" class="footer-wa" onclick="openWA(event,'Olá! Vim pelo site e quero falar com a Alares.')">
+        <svg viewBox="0 0 32 32" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M19.11 17.21c-.27-.14-1.59-.79-1.84-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.02-.22-.53-.44-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.95.93-.95 2.27 0 1.34.97 2.63 1.11 2.81.14.18 1.91 2.92 4.63 4.09.65.28 1.16.45 1.56.58.65.21 1.24.18 1.71.11.52-.08 1.59-.65 1.81-1.28.23-.63.23-1.18.16-1.29-.07-.11-.25-.18-.52-.32z"/><path d="M16.02 3C8.84 3 3 8.84 3 16c0 2.28.59 4.42 1.63 6.29L3 29l6.86-1.58A12.94 12.94 0 0 0 16.02 29C23.2 29 29 23.16 29 16S23.2 3 16.02 3zm0 23.7c-2.11 0-4.07-.62-5.72-1.69l-.41-.25-4.07.94.96-3.96-.27-.42A10.7 10.7 0 1 1 16.02 26.7z"/></svg>
+        WHATSAPP · (15) 2121-0619
+      </a>
+    </div>
+    <div class="footer-col"><h3>A Alares</h3><ul>
+      <li><a href="#" onclick="openPage(event,'conheca')">Conheça a Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'trabalhe')">Trabalhe Conosco</a></li>
+      <li><a href="#" onclick="openPage(event,'blog')">Blog Indo Além</a></li>
+      <li><a href="#" onclick="openPage(event,'loja')">Encontre uma loja</a></li>
+      <li><a href="#" onclick="openPage(event,'esg')">ESG na Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'etica')">Canal de Ética</a></li>
+      <li><a href="#" onclick="openPage(event,'ri')">Relação com investidores</a></li>
+      <li><a href="#" onclick="openPage(event,'imprensa')">Sala de imprensa</a></li>
+      <li><a href="#" onclick="openPage(event,'materiais')">Materiais de apoio</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para você</h3><ul>
+      <li><a href="#" onclick="openPage(event,'planos')">Planos de internet</a></li>
+      <li><a href="#" onclick="openPage(event,'digitais')">+ Conteúdos</a></li>
+      <li><a href="#" onclick="openPage(event,'fatura')">2ª via do boleto</a></li>
+      <li><a href="#" onclick="openPage(event,'auto')">Autoatendimento</a></li>
+      <li><a href="#" onclick="openPage(event,'central')">Central do assinante</a></li>
+      <li><a href="#" onclick="openPage(event,'contratos')">Contratos e regulamentos</a></li>
+      <li><a href="#" onclick="openPage(event,'negociacao')">Portal de negociação</a></li>
+      <li><a href="#" onclick="openPage(event,'fraude')">Prevenção a fraude</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para sua empresa</h3><ul>
+      <li><a href="#" onclick="openPage(event,'empresa')">Pequenas e médias empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Grandes empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Governo</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Atacado</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-legal"><a href="#" onclick="openPage(event,'privacidade')">Políticas de privacidade e cookies</a><span>© Alares</span></div>
+</footer></section>
+
+<section id="page-ri" class="page"><div class="page-head"><div class="container"><a href="#" class="page-back" onclick="goHome(event)">← Voltar</a><h1>Relação com investidores</h1><p>Informações corporativas e institucionais para investidores e interessados.</p></div></div><div class="page-content"><div class="info-grid"><article><h3>Informações corporativas</h3><p>Materiais e informações institucionais da companhia.</p></article><article><h3>Resultados e documentos</h3><p>Acesso orientado aos materiais disponibilizados pela empresa.</p></article><article><h3>Contato</h3><p>Para solicitações específicas, fale com nossa equipe.</p><button onclick="openWA(event,'Quero informações de Relação com Investidores da Alares.')">FALAR CONOSCO</button></article></div></div><footer class="footer page-footer">
+  <div class="footer-main">
+    <div class="footer-col footer-brand">
+      <a href="#" onclick="goHome(event)" class="footer-logo-text" aria-label="Alares - página inicial"><img class="alares-logo-footer-img" src="assets/img/logos/logo-white.png" alt="Alares"></a>
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=61594459374025" target="_blank" rel="noopener" aria-label="Facebook Alares">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+        </a>
+      </div>
+      <a href="#" class="footer-wa" onclick="openWA(event,'Olá! Vim pelo site e quero falar com a Alares.')">
+        <svg viewBox="0 0 32 32" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M19.11 17.21c-.27-.14-1.59-.79-1.84-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.02-.22-.53-.44-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.95.93-.95 2.27 0 1.34.97 2.63 1.11 2.81.14.18 1.91 2.92 4.63 4.09.65.28 1.16.45 1.56.58.65.21 1.24.18 1.71.11.52-.08 1.59-.65 1.81-1.28.23-.63.23-1.18.16-1.29-.07-.11-.25-.18-.52-.32z"/><path d="M16.02 3C8.84 3 3 8.84 3 16c0 2.28.59 4.42 1.63 6.29L3 29l6.86-1.58A12.94 12.94 0 0 0 16.02 29C23.2 29 29 23.16 29 16S23.2 3 16.02 3zm0 23.7c-2.11 0-4.07-.62-5.72-1.69l-.41-.25-4.07.94.96-3.96-.27-.42A10.7 10.7 0 1 1 16.02 26.7z"/></svg>
+        WHATSAPP · (15) 2121-0619
+      </a>
+    </div>
+    <div class="footer-col"><h3>A Alares</h3><ul>
+      <li><a href="#" onclick="openPage(event,'conheca')">Conheça a Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'trabalhe')">Trabalhe Conosco</a></li>
+      <li><a href="#" onclick="openPage(event,'blog')">Blog Indo Além</a></li>
+      <li><a href="#" onclick="openPage(event,'loja')">Encontre uma loja</a></li>
+      <li><a href="#" onclick="openPage(event,'esg')">ESG na Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'etica')">Canal de Ética</a></li>
+      <li><a href="#" onclick="openPage(event,'ri')">Relação com investidores</a></li>
+      <li><a href="#" onclick="openPage(event,'imprensa')">Sala de imprensa</a></li>
+      <li><a href="#" onclick="openPage(event,'materiais')">Materiais de apoio</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para você</h3><ul>
+      <li><a href="#" onclick="openPage(event,'planos')">Planos de internet</a></li>
+      <li><a href="#" onclick="openPage(event,'digitais')">+ Conteúdos</a></li>
+      <li><a href="#" onclick="openPage(event,'fatura')">2ª via do boleto</a></li>
+      <li><a href="#" onclick="openPage(event,'auto')">Autoatendimento</a></li>
+      <li><a href="#" onclick="openPage(event,'central')">Central do assinante</a></li>
+      <li><a href="#" onclick="openPage(event,'contratos')">Contratos e regulamentos</a></li>
+      <li><a href="#" onclick="openPage(event,'negociacao')">Portal de negociação</a></li>
+      <li><a href="#" onclick="openPage(event,'fraude')">Prevenção a fraude</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para sua empresa</h3><ul>
+      <li><a href="#" onclick="openPage(event,'empresa')">Pequenas e médias empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Grandes empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Governo</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Atacado</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-legal"><a href="#" onclick="openPage(event,'privacidade')">Políticas de privacidade e cookies</a><span>© Alares</span></div>
+</footer></section>
+
+<section id="page-imprensa" class="page"><div class="page-head"><div class="container"><a href="#" class="page-back" onclick="goHome(event)">← Voltar</a><h1>Sala de imprensa</h1><p>Notícias, informações institucionais e materiais para imprensa.</p></div></div><div class="page-content"><div class="info-grid"><article><h3>Notícias</h3><p>Acompanhe novidades e assuntos relacionados à Alares.</p><button onclick="openWA(event,'Quero informações da Sala de Imprensa Alares.')">ACESSAR</button></article><article><h3>Materiais</h3><p>Solicite materiais institucionais e informações oficiais.</p><button onclick="openWA(event,'Quero materiais de imprensa da Alares.')">SOLICITAR</button></article><article><h3>Contato de imprensa</h3><p>Para demandas específicas de comunicação.</p><button onclick="openWA(event,'Olá! Tenho uma solicitação para a imprensa da Alares.')">CONTATAR</button></article></div></div><footer class="footer page-footer">
+  <div class="footer-main">
+    <div class="footer-col footer-brand">
+      <a href="#" onclick="goHome(event)" class="footer-logo-text" aria-label="Alares - página inicial"><img class="alares-logo-footer-img" src="assets/img/logos/logo-white.png" alt="Alares"></a>
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=61594459374025" target="_blank" rel="noopener" aria-label="Facebook Alares">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+        </a>
+      </div>
+      <a href="#" class="footer-wa" onclick="openWA(event,'Olá! Vim pelo site e quero falar com a Alares.')">
+        <svg viewBox="0 0 32 32" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M19.11 17.21c-.27-.14-1.59-.79-1.84-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.02-.22-.53-.44-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.95.93-.95 2.27 0 1.34.97 2.63 1.11 2.81.14.18 1.91 2.92 4.63 4.09.65.28 1.16.45 1.56.58.65.21 1.24.18 1.71.11.52-.08 1.59-.65 1.81-1.28.23-.63.23-1.18.16-1.29-.07-.11-.25-.18-.52-.32z"/><path d="M16.02 3C8.84 3 3 8.84 3 16c0 2.28.59 4.42 1.63 6.29L3 29l6.86-1.58A12.94 12.94 0 0 0 16.02 29C23.2 29 29 23.16 29 16S23.2 3 16.02 3zm0 23.7c-2.11 0-4.07-.62-5.72-1.69l-.41-.25-4.07.94.96-3.96-.27-.42A10.7 10.7 0 1 1 16.02 26.7z"/></svg>
+        WHATSAPP · (15) 2121-0619
+      </a>
+    </div>
+    <div class="footer-col"><h3>A Alares</h3><ul>
+      <li><a href="#" onclick="openPage(event,'conheca')">Conheça a Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'trabalhe')">Trabalhe Conosco</a></li>
+      <li><a href="#" onclick="openPage(event,'blog')">Blog Indo Além</a></li>
+      <li><a href="#" onclick="openPage(event,'loja')">Encontre uma loja</a></li>
+      <li><a href="#" onclick="openPage(event,'esg')">ESG na Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'etica')">Canal de Ética</a></li>
+      <li><a href="#" onclick="openPage(event,'ri')">Relação com investidores</a></li>
+      <li><a href="#" onclick="openPage(event,'imprensa')">Sala de imprensa</a></li>
+      <li><a href="#" onclick="openPage(event,'materiais')">Materiais de apoio</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para você</h3><ul>
+      <li><a href="#" onclick="openPage(event,'planos')">Planos de internet</a></li>
+      <li><a href="#" onclick="openPage(event,'digitais')">+ Conteúdos</a></li>
+      <li><a href="#" onclick="openPage(event,'fatura')">2ª via do boleto</a></li>
+      <li><a href="#" onclick="openPage(event,'auto')">Autoatendimento</a></li>
+      <li><a href="#" onclick="openPage(event,'central')">Central do assinante</a></li>
+      <li><a href="#" onclick="openPage(event,'contratos')">Contratos e regulamentos</a></li>
+      <li><a href="#" onclick="openPage(event,'negociacao')">Portal de negociação</a></li>
+      <li><a href="#" onclick="openPage(event,'fraude')">Prevenção a fraude</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para sua empresa</h3><ul>
+      <li><a href="#" onclick="openPage(event,'empresa')">Pequenas e médias empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Grandes empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Governo</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Atacado</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-legal"><a href="#" onclick="openPage(event,'privacidade')">Políticas de privacidade e cookies</a><span>© Alares</span></div>
+</footer></section>
+
+<section id="page-materiais" class="page"><div class="page-head"><div class="container"><a href="#" class="page-back" onclick="goHome(event)">← Voltar</a><h1>Materiais de apoio</h1><p>Documentos, orientações e materiais institucionais da Alares.</p></div></div><div class="page-content"><div class="info-grid"><article><h3>Materiais institucionais</h3><p>Apresentações e informações sobre a empresa.</p><button onclick="openWA(event,'Quero solicitar materiais institucionais da Alares.')">SOLICITAR</button></article><article><h3>Contratos e regulamentos</h3><p>Consulte a página de contratos e regulamentos.</p><button onclick="openPage(event,'contratos')">VER DOCUMENTOS</button></article><article><h3>Segurança</h3><p>Orientações para evitar fraudes e cobranças falsas.</p><button onclick="openPage(event,'fraude')">VER ORIENTAÇÕES</button></article></div></div><footer class="footer page-footer">
+  <div class="footer-main">
+    <div class="footer-col footer-brand">
+      <a href="#" onclick="goHome(event)" class="footer-logo-text" aria-label="Alares - página inicial"><img class="alares-logo-footer-img" src="assets/img/logos/logo-white.png" alt="Alares"></a>
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=61594459374025" target="_blank" rel="noopener" aria-label="Facebook Alares">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+        </a>
+      </div>
+      <a href="#" class="footer-wa" onclick="openWA(event,'Olá! Vim pelo site e quero falar com a Alares.')">
+        <svg viewBox="0 0 32 32" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M19.11 17.21c-.27-.14-1.59-.79-1.84-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.02-.22-.53-.44-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.95.93-.95 2.27 0 1.34.97 2.63 1.11 2.81.14.18 1.91 2.92 4.63 4.09.65.28 1.16.45 1.56.58.65.21 1.24.18 1.71.11.52-.08 1.59-.65 1.81-1.28.23-.63.23-1.18.16-1.29-.07-.11-.25-.18-.52-.32z"/><path d="M16.02 3C8.84 3 3 8.84 3 16c0 2.28.59 4.42 1.63 6.29L3 29l6.86-1.58A12.94 12.94 0 0 0 16.02 29C23.2 29 29 23.16 29 16S23.2 3 16.02 3zm0 23.7c-2.11 0-4.07-.62-5.72-1.69l-.41-.25-4.07.94.96-3.96-.27-.42A10.7 10.7 0 1 1 16.02 26.7z"/></svg>
+        WHATSAPP · (15) 2121-0619
+      </a>
+    </div>
+    <div class="footer-col"><h3>A Alares</h3><ul>
+      <li><a href="#" onclick="openPage(event,'conheca')">Conheça a Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'trabalhe')">Trabalhe Conosco</a></li>
+      <li><a href="#" onclick="openPage(event,'blog')">Blog Indo Além</a></li>
+      <li><a href="#" onclick="openPage(event,'loja')">Encontre uma loja</a></li>
+      <li><a href="#" onclick="openPage(event,'esg')">ESG na Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'etica')">Canal de Ética</a></li>
+      <li><a href="#" onclick="openPage(event,'ri')">Relação com investidores</a></li>
+      <li><a href="#" onclick="openPage(event,'imprensa')">Sala de imprensa</a></li>
+      <li><a href="#" onclick="openPage(event,'materiais')">Materiais de apoio</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para você</h3><ul>
+      <li><a href="#" onclick="openPage(event,'planos')">Planos de internet</a></li>
+      <li><a href="#" onclick="openPage(event,'digitais')">+ Conteúdos</a></li>
+      <li><a href="#" onclick="openPage(event,'fatura')">2ª via do boleto</a></li>
+      <li><a href="#" onclick="openPage(event,'auto')">Autoatendimento</a></li>
+      <li><a href="#" onclick="openPage(event,'central')">Central do assinante</a></li>
+      <li><a href="#" onclick="openPage(event,'contratos')">Contratos e regulamentos</a></li>
+      <li><a href="#" onclick="openPage(event,'negociacao')">Portal de negociação</a></li>
+      <li><a href="#" onclick="openPage(event,'fraude')">Prevenção a fraude</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para sua empresa</h3><ul>
+      <li><a href="#" onclick="openPage(event,'empresa')">Pequenas e médias empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Grandes empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Governo</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Atacado</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-legal"><a href="#" onclick="openPage(event,'privacidade')">Políticas de privacidade e cookies</a><span>© Alares</span></div>
+</footer></section>
+
+<section id="page-auto" class="page"><div class="page-head"><div class="container"><a href="#" class="page-back" onclick="goHome(event)">← Voltar</a><h1>Autoatendimento</h1><p>Resolva solicitações do seu serviço de forma rápida.</p></div></div><div class="page-content"><div class="info-grid"><article><h3>Suporte técnico</h3><p>Problemas de conexão, Wi‑Fi ou velocidade.</p><button onclick="openWA(event,'Olá! Preciso de suporte técnico.')">SUPORTE</button></article><article><h3>2ª via</h3><p>Solicite sua fatura e orientações de pagamento.</p><button onclick="openPage(event,'fatura')">2ª VIA</button></article><article><h3>Atendimento</h3><p>Fale com nossa equipe sobre seu serviço.</p><button onclick="openWA(event,'Olá! Preciso de atendimento Alares.')">FALAR AGORA</button></article></div></div><footer class="footer page-footer">
+  <div class="footer-main">
+    <div class="footer-col footer-brand">
+      <a href="#" onclick="goHome(event)" class="footer-logo-text" aria-label="Alares - página inicial"><img class="alares-logo-footer-img" src="assets/img/logos/logo-white.png" alt="Alares"></a>
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=61594459374025" target="_blank" rel="noopener" aria-label="Facebook Alares">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+        </a>
+      </div>
+      <a href="#" class="footer-wa" onclick="openWA(event,'Olá! Vim pelo site e quero falar com a Alares.')">
+        <svg viewBox="0 0 32 32" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M19.11 17.21c-.27-.14-1.59-.79-1.84-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.02-.22-.53-.44-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.95.93-.95 2.27 0 1.34.97 2.63 1.11 2.81.14.18 1.91 2.92 4.63 4.09.65.28 1.16.45 1.56.58.65.21 1.24.18 1.71.11.52-.08 1.59-.65 1.81-1.28.23-.63.23-1.18.16-1.29-.07-.11-.25-.18-.52-.32z"/><path d="M16.02 3C8.84 3 3 8.84 3 16c0 2.28.59 4.42 1.63 6.29L3 29l6.86-1.58A12.94 12.94 0 0 0 16.02 29C23.2 29 29 23.16 29 16S23.2 3 16.02 3zm0 23.7c-2.11 0-4.07-.62-5.72-1.69l-.41-.25-4.07.94.96-3.96-.27-.42A10.7 10.7 0 1 1 16.02 26.7z"/></svg>
+        WHATSAPP · (15) 2121-0619
+      </a>
+    </div>
+    <div class="footer-col"><h3>A Alares</h3><ul>
+      <li><a href="#" onclick="openPage(event,'conheca')">Conheça a Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'trabalhe')">Trabalhe Conosco</a></li>
+      <li><a href="#" onclick="openPage(event,'blog')">Blog Indo Além</a></li>
+      <li><a href="#" onclick="openPage(event,'loja')">Encontre uma loja</a></li>
+      <li><a href="#" onclick="openPage(event,'esg')">ESG na Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'etica')">Canal de Ética</a></li>
+      <li><a href="#" onclick="openPage(event,'ri')">Relação com investidores</a></li>
+      <li><a href="#" onclick="openPage(event,'imprensa')">Sala de imprensa</a></li>
+      <li><a href="#" onclick="openPage(event,'materiais')">Materiais de apoio</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para você</h3><ul>
+      <li><a href="#" onclick="openPage(event,'planos')">Planos de internet</a></li>
+      <li><a href="#" onclick="openPage(event,'digitais')">+ Conteúdos</a></li>
+      <li><a href="#" onclick="openPage(event,'fatura')">2ª via do boleto</a></li>
+      <li><a href="#" onclick="openPage(event,'auto')">Autoatendimento</a></li>
+      <li><a href="#" onclick="openPage(event,'central')">Central do assinante</a></li>
+      <li><a href="#" onclick="openPage(event,'contratos')">Contratos e regulamentos</a></li>
+      <li><a href="#" onclick="openPage(event,'negociacao')">Portal de negociação</a></li>
+      <li><a href="#" onclick="openPage(event,'fraude')">Prevenção a fraude</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para sua empresa</h3><ul>
+      <li><a href="#" onclick="openPage(event,'empresa')">Pequenas e médias empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Grandes empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Governo</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Atacado</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-legal"><a href="#" onclick="openPage(event,'privacidade')">Políticas de privacidade e cookies</a><span>© Alares</span></div>
+</footer></section>
+
+<section id="page-central" class="page"><div class="page-head"><div class="container"><a href="#" class="page-back" onclick="goHome(event)">← Voltar</a><h1>Central do assinante</h1><p>Área para acompanhar serviços, fatura e atendimento.</p></div></div><div class="page-content"><div class="feature-panel"><div><h2>Precisa acessar sua conta?</h2><p>Use este canal para receber orientação de acesso à Central do Assinante.</p><button onclick="openWA(event,'Olá! Preciso acessar a Central do Assinante.')">ACESSAR CENTRAL</button></div><div class="feature-stat"><strong>Fatura</strong><span>consulte suas cobranças</span><strong>Serviços</strong><span>acompanhe seu atendimento</span></div></div></div><footer class="footer page-footer">
+  <div class="footer-main">
+    <div class="footer-col footer-brand">
+      <a href="#" onclick="goHome(event)" class="footer-logo-text" aria-label="Alares - página inicial"><img class="alares-logo-footer-img" src="assets/img/logos/logo-white.png" alt="Alares"></a>
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=61594459374025" target="_blank" rel="noopener" aria-label="Facebook Alares">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+        </a>
+      </div>
+      <a href="#" class="footer-wa" onclick="openWA(event,'Olá! Vim pelo site e quero falar com a Alares.')">
+        <svg viewBox="0 0 32 32" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M19.11 17.21c-.27-.14-1.59-.79-1.84-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.02-.22-.53-.44-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.95.93-.95 2.27 0 1.34.97 2.63 1.11 2.81.14.18 1.91 2.92 4.63 4.09.65.28 1.16.45 1.56.58.65.21 1.24.18 1.71.11.52-.08 1.59-.65 1.81-1.28.23-.63.23-1.18.16-1.29-.07-.11-.25-.18-.52-.32z"/><path d="M16.02 3C8.84 3 3 8.84 3 16c0 2.28.59 4.42 1.63 6.29L3 29l6.86-1.58A12.94 12.94 0 0 0 16.02 29C23.2 29 29 23.16 29 16S23.2 3 16.02 3zm0 23.7c-2.11 0-4.07-.62-5.72-1.69l-.41-.25-4.07.94.96-3.96-.27-.42A10.7 10.7 0 1 1 16.02 26.7z"/></svg>
+        WHATSAPP · (15) 2121-0619
+      </a>
+    </div>
+    <div class="footer-col"><h3>A Alares</h3><ul>
+      <li><a href="#" onclick="openPage(event,'conheca')">Conheça a Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'trabalhe')">Trabalhe Conosco</a></li>
+      <li><a href="#" onclick="openPage(event,'blog')">Blog Indo Além</a></li>
+      <li><a href="#" onclick="openPage(event,'loja')">Encontre uma loja</a></li>
+      <li><a href="#" onclick="openPage(event,'esg')">ESG na Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'etica')">Canal de Ética</a></li>
+      <li><a href="#" onclick="openPage(event,'ri')">Relação com investidores</a></li>
+      <li><a href="#" onclick="openPage(event,'imprensa')">Sala de imprensa</a></li>
+      <li><a href="#" onclick="openPage(event,'materiais')">Materiais de apoio</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para você</h3><ul>
+      <li><a href="#" onclick="openPage(event,'planos')">Planos de internet</a></li>
+      <li><a href="#" onclick="openPage(event,'digitais')">+ Conteúdos</a></li>
+      <li><a href="#" onclick="openPage(event,'fatura')">2ª via do boleto</a></li>
+      <li><a href="#" onclick="openPage(event,'auto')">Autoatendimento</a></li>
+      <li><a href="#" onclick="openPage(event,'central')">Central do assinante</a></li>
+      <li><a href="#" onclick="openPage(event,'contratos')">Contratos e regulamentos</a></li>
+      <li><a href="#" onclick="openPage(event,'negociacao')">Portal de negociação</a></li>
+      <li><a href="#" onclick="openPage(event,'fraude')">Prevenção a fraude</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para sua empresa</h3><ul>
+      <li><a href="#" onclick="openPage(event,'empresa')">Pequenas e médias empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Grandes empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Governo</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Atacado</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-legal"><a href="#" onclick="openPage(event,'privacidade')">Políticas de privacidade e cookies</a><span>© Alares</span></div>
+</footer></section>
+
+<section id="page-contratos" class="page"><div class="page-head"><div class="container"><a href="#" class="page-back" onclick="goHome(event)">← Voltar</a><h1>Contratos e regulamentos</h1><p>Informações contratuais e regulamentos relacionados aos serviços.</p></div></div><div class="page-content"><div class="info-grid"><article><h3>Contrato de prestação</h3><p>Consulte informações e solicite orientação sobre seu contrato.</p><button onclick="openWA(event,'Quero informações sobre meu contrato Alares.')">SOLICITAR</button></article><article><h3>Regulamentos</h3><p>Materiais e condições das ofertas e serviços.</p><button onclick="openWA(event,'Quero consultar regulamentos da Alares.')">CONSULTAR</button></article><article><h3>Atendimento</h3><p>Se precisar de ajuda para interpretar um documento, fale conosco.</p><button onclick="openWA(event,'Preciso de ajuda com contratos e regulamentos.')">AJUDA</button></article></div></div><footer class="footer page-footer">
+  <div class="footer-main">
+    <div class="footer-col footer-brand">
+      <a href="#" onclick="goHome(event)" class="footer-logo-text" aria-label="Alares - página inicial"><img class="alares-logo-footer-img" src="assets/img/logos/logo-white.png" alt="Alares"></a>
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=61594459374025" target="_blank" rel="noopener" aria-label="Facebook Alares">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+        </a>
+      </div>
+      <a href="#" class="footer-wa" onclick="openWA(event,'Olá! Vim pelo site e quero falar com a Alares.')">
+        <svg viewBox="0 0 32 32" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M19.11 17.21c-.27-.14-1.59-.79-1.84-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.02-.22-.53-.44-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.95.93-.95 2.27 0 1.34.97 2.63 1.11 2.81.14.18 1.91 2.92 4.63 4.09.65.28 1.16.45 1.56.58.65.21 1.24.18 1.71.11.52-.08 1.59-.65 1.81-1.28.23-.63.23-1.18.16-1.29-.07-.11-.25-.18-.52-.32z"/><path d="M16.02 3C8.84 3 3 8.84 3 16c0 2.28.59 4.42 1.63 6.29L3 29l6.86-1.58A12.94 12.94 0 0 0 16.02 29C23.2 29 29 23.16 29 16S23.2 3 16.02 3zm0 23.7c-2.11 0-4.07-.62-5.72-1.69l-.41-.25-4.07.94.96-3.96-.27-.42A10.7 10.7 0 1 1 16.02 26.7z"/></svg>
+        WHATSAPP · (15) 2121-0619
+      </a>
+    </div>
+    <div class="footer-col"><h3>A Alares</h3><ul>
+      <li><a href="#" onclick="openPage(event,'conheca')">Conheça a Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'trabalhe')">Trabalhe Conosco</a></li>
+      <li><a href="#" onclick="openPage(event,'blog')">Blog Indo Além</a></li>
+      <li><a href="#" onclick="openPage(event,'loja')">Encontre uma loja</a></li>
+      <li><a href="#" onclick="openPage(event,'esg')">ESG na Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'etica')">Canal de Ética</a></li>
+      <li><a href="#" onclick="openPage(event,'ri')">Relação com investidores</a></li>
+      <li><a href="#" onclick="openPage(event,'imprensa')">Sala de imprensa</a></li>
+      <li><a href="#" onclick="openPage(event,'materiais')">Materiais de apoio</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para você</h3><ul>
+      <li><a href="#" onclick="openPage(event,'planos')">Planos de internet</a></li>
+      <li><a href="#" onclick="openPage(event,'digitais')">+ Conteúdos</a></li>
+      <li><a href="#" onclick="openPage(event,'fatura')">2ª via do boleto</a></li>
+      <li><a href="#" onclick="openPage(event,'auto')">Autoatendimento</a></li>
+      <li><a href="#" onclick="openPage(event,'central')">Central do assinante</a></li>
+      <li><a href="#" onclick="openPage(event,'contratos')">Contratos e regulamentos</a></li>
+      <li><a href="#" onclick="openPage(event,'negociacao')">Portal de negociação</a></li>
+      <li><a href="#" onclick="openPage(event,'fraude')">Prevenção a fraude</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para sua empresa</h3><ul>
+      <li><a href="#" onclick="openPage(event,'empresa')">Pequenas e médias empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Grandes empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Governo</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Atacado</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-legal"><a href="#" onclick="openPage(event,'privacidade')">Políticas de privacidade e cookies</a><span>© Alares</span></div>
+</footer></section>
+
+<section id="page-negociacao" class="page"><div class="page-head"><div class="container"><a href="#" class="page-back" onclick="goHome(event)">← Voltar</a><h1>Portal de negociação</h1><p>Fale com a equipe sobre pendências e possibilidades de negociação.</p></div></div><div class="page-content"><div class="feature-panel"><div><h2>Vamos resolver juntos</h2><p>Para uma negociação segura, fale com a equipe pelo canal oficial.</p><button onclick="openWA(event,'Olá! Quero negociar uma pendência com a Alares.')">NEGOCIAR AGORA</button></div><div class="feature-stat"><strong>Seguro</strong><span>canal oficial</span><strong>Rápido</strong><span>atendimento pelo WhatsApp</span></div></div></div><footer class="footer page-footer">
+  <div class="footer-main">
+    <div class="footer-col footer-brand">
+      <a href="#" onclick="goHome(event)" class="footer-logo-text" aria-label="Alares - página inicial"><img class="alares-logo-footer-img" src="assets/img/logos/logo-white.png" alt="Alares"></a>
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=61594459374025" target="_blank" rel="noopener" aria-label="Facebook Alares">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+        </a>
+      </div>
+      <a href="#" class="footer-wa" onclick="openWA(event,'Olá! Vim pelo site e quero falar com a Alares.')">
+        <svg viewBox="0 0 32 32" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M19.11 17.21c-.27-.14-1.59-.79-1.84-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.02-.22-.53-.44-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.95.93-.95 2.27 0 1.34.97 2.63 1.11 2.81.14.18 1.91 2.92 4.63 4.09.65.28 1.16.45 1.56.58.65.21 1.24.18 1.71.11.52-.08 1.59-.65 1.81-1.28.23-.63.23-1.18.16-1.29-.07-.11-.25-.18-.52-.32z"/><path d="M16.02 3C8.84 3 3 8.84 3 16c0 2.28.59 4.42 1.63 6.29L3 29l6.86-1.58A12.94 12.94 0 0 0 16.02 29C23.2 29 29 23.16 29 16S23.2 3 16.02 3zm0 23.7c-2.11 0-4.07-.62-5.72-1.69l-.41-.25-4.07.94.96-3.96-.27-.42A10.7 10.7 0 1 1 16.02 26.7z"/></svg>
+        WHATSAPP · (15) 2121-0619
+      </a>
+    </div>
+    <div class="footer-col"><h3>A Alares</h3><ul>
+      <li><a href="#" onclick="openPage(event,'conheca')">Conheça a Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'trabalhe')">Trabalhe Conosco</a></li>
+      <li><a href="#" onclick="openPage(event,'blog')">Blog Indo Além</a></li>
+      <li><a href="#" onclick="openPage(event,'loja')">Encontre uma loja</a></li>
+      <li><a href="#" onclick="openPage(event,'esg')">ESG na Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'etica')">Canal de Ética</a></li>
+      <li><a href="#" onclick="openPage(event,'ri')">Relação com investidores</a></li>
+      <li><a href="#" onclick="openPage(event,'imprensa')">Sala de imprensa</a></li>
+      <li><a href="#" onclick="openPage(event,'materiais')">Materiais de apoio</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para você</h3><ul>
+      <li><a href="#" onclick="openPage(event,'planos')">Planos de internet</a></li>
+      <li><a href="#" onclick="openPage(event,'digitais')">+ Conteúdos</a></li>
+      <li><a href="#" onclick="openPage(event,'fatura')">2ª via do boleto</a></li>
+      <li><a href="#" onclick="openPage(event,'auto')">Autoatendimento</a></li>
+      <li><a href="#" onclick="openPage(event,'central')">Central do assinante</a></li>
+      <li><a href="#" onclick="openPage(event,'contratos')">Contratos e regulamentos</a></li>
+      <li><a href="#" onclick="openPage(event,'negociacao')">Portal de negociação</a></li>
+      <li><a href="#" onclick="openPage(event,'fraude')">Prevenção a fraude</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para sua empresa</h3><ul>
+      <li><a href="#" onclick="openPage(event,'empresa')">Pequenas e médias empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Grandes empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Governo</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Atacado</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-legal"><a href="#" onclick="openPage(event,'privacidade')">Políticas de privacidade e cookies</a><span>© Alares</span></div>
+</footer></section>
+
+<section id="page-fraude" class="page"><div class="page-head"><div class="container"><a href="#" class="page-back" onclick="goHome(event)">← Voltar</a><h1>Prevenção à fraude</h1><p>Segurança para seus pagamentos: aprenda a identificar cobranças suspeitas e golpes.</p></div></div><div class="page-content"><div class="warning-panel"><h2>Fique atento</h2><p>Pessoas mal-intencionadas podem se passar por colaboradores da Alares por WhatsApp, e-mail, SMS ou telefone. Confirme sempre a origem de uma cobrança antes de pagar.</p><button onclick="openWA(event,'Olá! Quero orientação sobre prevenção a fraude e segurança de pagamentos.')">PEDIR ORIENTAÇÃO</button></div><div class="info-grid" style="margin-top:24px"><article><h3>Boletos</h3><p>Confira os dados da cobrança antes do pagamento.</p></article><article><h3>PIX</h3><p>Confirme o destinatário e a origem da cobrança.</p></article><article><h3>WhatsApp</h3><p>Desconfie de solicitações inesperadas e links suspeitos.</p></article></div></div><footer class="footer page-footer">
+  <div class="footer-main">
+    <div class="footer-col footer-brand">
+      <a href="#" onclick="goHome(event)" class="footer-logo-text" aria-label="Alares - página inicial"><img class="alares-logo-footer-img" src="assets/img/logos/logo-white.png" alt="Alares"></a>
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=61594459374025" target="_blank" rel="noopener" aria-label="Facebook Alares">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+        </a>
+      </div>
+      <a href="#" class="footer-wa" onclick="openWA(event,'Olá! Vim pelo site e quero falar com a Alares.')">
+        <svg viewBox="0 0 32 32" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M19.11 17.21c-.27-.14-1.59-.79-1.84-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.02-.22-.53-.44-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.95.93-.95 2.27 0 1.34.97 2.63 1.11 2.81.14.18 1.91 2.92 4.63 4.09.65.28 1.16.45 1.56.58.65.21 1.24.18 1.71.11.52-.08 1.59-.65 1.81-1.28.23-.63.23-1.18.16-1.29-.07-.11-.25-.18-.52-.32z"/><path d="M16.02 3C8.84 3 3 8.84 3 16c0 2.28.59 4.42 1.63 6.29L3 29l6.86-1.58A12.94 12.94 0 0 0 16.02 29C23.2 29 29 23.16 29 16S23.2 3 16.02 3zm0 23.7c-2.11 0-4.07-.62-5.72-1.69l-.41-.25-4.07.94.96-3.96-.27-.42A10.7 10.7 0 1 1 16.02 26.7z"/></svg>
+        WHATSAPP · (15) 2121-0619
+      </a>
+    </div>
+    <div class="footer-col"><h3>A Alares</h3><ul>
+      <li><a href="#" onclick="openPage(event,'conheca')">Conheça a Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'trabalhe')">Trabalhe Conosco</a></li>
+      <li><a href="#" onclick="openPage(event,'blog')">Blog Indo Além</a></li>
+      <li><a href="#" onclick="openPage(event,'loja')">Encontre uma loja</a></li>
+      <li><a href="#" onclick="openPage(event,'esg')">ESG na Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'etica')">Canal de Ética</a></li>
+      <li><a href="#" onclick="openPage(event,'ri')">Relação com investidores</a></li>
+      <li><a href="#" onclick="openPage(event,'imprensa')">Sala de imprensa</a></li>
+      <li><a href="#" onclick="openPage(event,'materiais')">Materiais de apoio</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para você</h3><ul>
+      <li><a href="#" onclick="openPage(event,'planos')">Planos de internet</a></li>
+      <li><a href="#" onclick="openPage(event,'digitais')">+ Conteúdos</a></li>
+      <li><a href="#" onclick="openPage(event,'fatura')">2ª via do boleto</a></li>
+      <li><a href="#" onclick="openPage(event,'auto')">Autoatendimento</a></li>
+      <li><a href="#" onclick="openPage(event,'central')">Central do assinante</a></li>
+      <li><a href="#" onclick="openPage(event,'contratos')">Contratos e regulamentos</a></li>
+      <li><a href="#" onclick="openPage(event,'negociacao')">Portal de negociação</a></li>
+      <li><a href="#" onclick="openPage(event,'fraude')">Prevenção a fraude</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para sua empresa</h3><ul>
+      <li><a href="#" onclick="openPage(event,'empresa')">Pequenas e médias empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Grandes empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Governo</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Atacado</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-legal"><a href="#" onclick="openPage(event,'privacidade')">Políticas de privacidade e cookies</a><span>© Alares</span></div>
+</footer></section>
+
+<section id="page-privacidade" class="page"><div class="page-head"><div class="container"><a href="#" class="page-back" onclick="goHome(event)">← Voltar</a><h1>Políticas de privacidade e cookies</h1><p>Informações sobre tratamento de dados pessoais e utilização de cookies.</p></div></div><div class="page-content"><div class="legal-panel"><h2>Privacidade</h2><p>A Alares informa como coleta, utiliza, compartilha e protege dados pessoais e apresenta os direitos dos titulares.</p><h2>Cookies</h2><p>Cookies podem ser utilizados para funcionamento, segurança, desempenho, funcionalidade e publicidade, conforme as configurações e política aplicável.</p><h2>Contato</h2><p>Para questões relacionadas à privacidade, a política oficial informa o contato dpo@alaresinternet.com.br.</p><button onclick="openWA(event,'Olá! Preciso de orientação sobre privacidade e cookies.')">FALAR CONOSCO</button></div></div><footer class="footer page-footer">
+  <div class="footer-main">
+    <div class="footer-col footer-brand">
+      <a href="#" onclick="goHome(event)" class="footer-logo-text" aria-label="Alares - página inicial"><img class="alares-logo-footer-img" src="assets/img/logos/logo-white.png" alt="Alares"></a>
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=61594459374025" target="_blank" rel="noopener" aria-label="Facebook Alares">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+        </a>
+      </div>
+      <a href="#" class="footer-wa" onclick="openWA(event,'Olá! Vim pelo site e quero falar com a Alares.')">
+        <svg viewBox="0 0 32 32" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M19.11 17.21c-.27-.14-1.59-.79-1.84-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.02-.22-.53-.44-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.95.93-.95 2.27 0 1.34.97 2.63 1.11 2.81.14.18 1.91 2.92 4.63 4.09.65.28 1.16.45 1.56.58.65.21 1.24.18 1.71.11.52-.08 1.59-.65 1.81-1.28.23-.63.23-1.18.16-1.29-.07-.11-.25-.18-.52-.32z"/><path d="M16.02 3C8.84 3 3 8.84 3 16c0 2.28.59 4.42 1.63 6.29L3 29l6.86-1.58A12.94 12.94 0 0 0 16.02 29C23.2 29 29 23.16 29 16S23.2 3 16.02 3zm0 23.7c-2.11 0-4.07-.62-5.72-1.69l-.41-.25-4.07.94.96-3.96-.27-.42A10.7 10.7 0 1 1 16.02 26.7z"/></svg>
+        WHATSAPP · (15) 2121-0619
+      </a>
+    </div>
+    <div class="footer-col"><h3>A Alares</h3><ul>
+      <li><a href="#" onclick="openPage(event,'conheca')">Conheça a Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'trabalhe')">Trabalhe Conosco</a></li>
+      <li><a href="#" onclick="openPage(event,'blog')">Blog Indo Além</a></li>
+      <li><a href="#" onclick="openPage(event,'loja')">Encontre uma loja</a></li>
+      <li><a href="#" onclick="openPage(event,'esg')">ESG na Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'etica')">Canal de Ética</a></li>
+      <li><a href="#" onclick="openPage(event,'ri')">Relação com investidores</a></li>
+      <li><a href="#" onclick="openPage(event,'imprensa')">Sala de imprensa</a></li>
+      <li><a href="#" onclick="openPage(event,'materiais')">Materiais de apoio</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para você</h3><ul>
+      <li><a href="#" onclick="openPage(event,'planos')">Planos de internet</a></li>
+      <li><a href="#" onclick="openPage(event,'digitais')">+ Conteúdos</a></li>
+      <li><a href="#" onclick="openPage(event,'fatura')">2ª via do boleto</a></li>
+      <li><a href="#" onclick="openPage(event,'auto')">Autoatendimento</a></li>
+      <li><a href="#" onclick="openPage(event,'central')">Central do assinante</a></li>
+      <li><a href="#" onclick="openPage(event,'contratos')">Contratos e regulamentos</a></li>
+      <li><a href="#" onclick="openPage(event,'negociacao')">Portal de negociação</a></li>
+      <li><a href="#" onclick="openPage(event,'fraude')">Prevenção a fraude</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para sua empresa</h3><ul>
+      <li><a href="#" onclick="openPage(event,'empresa')">Pequenas e médias empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Grandes empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Governo</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Atacado</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-legal"><a href="#" onclick="openPage(event,'privacidade')">Políticas de privacidade e cookies</a><span>© Alares</span></div>
+</footer></section>
+
+<section id="page-planos" class="page"><div class="page-head"><div class="container"><a href="#" class="page-back" onclick="goHome(event)">← Voltar</a><h1>Planos de internet</h1><p>Internet por fibra óptica com opções de velocidade, entretenimento e benefícios para sua casa.</p></div></div><div class="page-content"><div class="tabs" style="padding-left:0"><button class="tab active" type="button">Destaques</button><button class="tab" type="button">Mais velocidade</button><button class="tab" type="button">Combos</button></div><div class="page-cards"><div class="page-card"><img class="sva-logo" src="assets/img/servicos/logo-globoplay.png" alt="Globoplay"><div class="page-card"><h3>1 Giga + Globoplay</h3><p>Plano em destaque com Wi‑Fi 6 e conteúdo Globoplay.</p><strong>R$ 99,99*</strong><button onclick="openWA(event,'Quero contratar o plano 1 Giga com Globoplay.',true)">CONTRATAR</button></div><div class="page-card"><img class="sva-logo" src="assets/img/servicos/logo-hbomax.png" alt="HBO Max"><div class="page-card"><h3>1 Giga + HBO Max</h3><p>Alta velocidade e entretenimento para a família.</p><strong>R$ 119,99*</strong><button onclick="openWA(event,'Quero contratar o plano 1 Giga com HBO Max.',true)">CONTRATAR</button></div><div class="page-card"><h3>1 Giga Gamer</h3><p>Plano com ExitLag e conexão para jogar.</p><strong>R$ 139,99*</strong><button onclick="openWA(event,'Quero contratar o plano 1 Giga Gamer.',true)">CONTRATAR</button></div><div class="page-card"><h3>Todos os planos</h3><p>Compare as opções disponíveis para sua região.</p><button onclick="openWA(event,'Quero conhecer todos os planos disponíveis.',true)">VER OFERTAS</button></div></div><p class="fineprint">*Valores e disponibilidade são ilustrativos e podem variar conforme localidade e oferta vigente.</p></div><footer class="footer page-footer">
+  <div class="footer-main">
+    <div class="footer-col footer-brand">
+      <a href="#" onclick="goHome(event)" class="footer-logo-text" aria-label="Alares - página inicial"><img class="alares-logo-footer-img" src="assets/img/logos/logo-white.png" alt="Alares"></a>
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=61594459374025" target="_blank" rel="noopener" aria-label="Facebook Alares">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+        </a>
+      </div>
+      <a href="#" class="footer-wa" onclick="openWA(event,'Olá! Vim pelo site e quero falar com a Alares.')">
+        <svg viewBox="0 0 32 32" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M19.11 17.21c-.27-.14-1.59-.79-1.84-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.02-.22-.53-.44-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.95.93-.95 2.27 0 1.34.97 2.63 1.11 2.81.14.18 1.91 2.92 4.63 4.09.65.28 1.16.45 1.56.58.65.21 1.24.18 1.71.11.52-.08 1.59-.65 1.81-1.28.23-.63.23-1.18.16-1.29-.07-.11-.25-.18-.52-.32z"/><path d="M16.02 3C8.84 3 3 8.84 3 16c0 2.28.59 4.42 1.63 6.29L3 29l6.86-1.58A12.94 12.94 0 0 0 16.02 29C23.2 29 29 23.16 29 16S23.2 3 16.02 3zm0 23.7c-2.11 0-4.07-.62-5.72-1.69l-.41-.25-4.07.94.96-3.96-.27-.42A10.7 10.7 0 1 1 16.02 26.7z"/></svg>
+        WHATSAPP · (15) 2121-0619
+      </a>
+    </div>
+    <div class="footer-col"><h3>A Alares</h3><ul>
+      <li><a href="#" onclick="openPage(event,'conheca')">Conheça a Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'trabalhe')">Trabalhe Conosco</a></li>
+      <li><a href="#" onclick="openPage(event,'blog')">Blog Indo Além</a></li>
+      <li><a href="#" onclick="openPage(event,'loja')">Encontre uma loja</a></li>
+      <li><a href="#" onclick="openPage(event,'esg')">ESG na Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'etica')">Canal de Ética</a></li>
+      <li><a href="#" onclick="openPage(event,'ri')">Relação com investidores</a></li>
+      <li><a href="#" onclick="openPage(event,'imprensa')">Sala de imprensa</a></li>
+      <li><a href="#" onclick="openPage(event,'materiais')">Materiais de apoio</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para você</h3><ul>
+      <li><a href="#" onclick="openPage(event,'planos')">Planos de internet</a></li>
+      <li><a href="#" onclick="openPage(event,'digitais')">+ Conteúdos</a></li>
+      <li><a href="#" onclick="openPage(event,'fatura')">2ª via do boleto</a></li>
+      <li><a href="#" onclick="openPage(event,'auto')">Autoatendimento</a></li>
+      <li><a href="#" onclick="openPage(event,'central')">Central do assinante</a></li>
+      <li><a href="#" onclick="openPage(event,'contratos')">Contratos e regulamentos</a></li>
+      <li><a href="#" onclick="openPage(event,'negociacao')">Portal de negociação</a></li>
+      <li><a href="#" onclick="openPage(event,'fraude')">Prevenção a fraude</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para sua empresa</h3><ul>
+      <li><a href="#" onclick="openPage(event,'empresa')">Pequenas e médias empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Grandes empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Governo</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Atacado</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-legal"><a href="#" onclick="openPage(event,'privacidade')">Políticas de privacidade e cookies</a><span>© Alares</span></div>
+</footer></section>
+
+<section id="page-digitais" class="page"><div class="page-head"><div class="container"><a href="#" class="page-back" onclick="goHome(event)">← Voltar</a><h1>+ Conteúdos</h1><p>Serviços digitais e entretenimento para aproveitar ainda mais sua conexão.</p></div></div><div class="page-content"><div class="info-grid"><article><img class="sva-logo" src="assets/img/servicos/logo-globoplay.png" alt="Globoplay"><article><h3>Globoplay</h3><p>Conteúdos de vídeo e entretenimento.</p><button onclick="openWA(event,'Quero saber sobre Globoplay.')">SAIBA MAIS</button></article><article><img class="sva-logo" src="assets/img/servicos/logo-hbomax.png" alt="Max"><article><h3>Max</h3><p>Filmes, séries e entretenimento.</p><button onclick="openWA(event,'Quero saber sobre Max.')">SAIBA MAIS</button></article><article><img class="sva-logo" src="assets/img/servicos/logo-disney.png" alt="Disney+"><article><h3>Disney+</h3><p>Conteúdo para toda a família.</p><button onclick="openWA(event,'Quero saber sobre Disney+.')">SAIBA MAIS</button></article><article><h3>Deezer</h3><p>Música e entretenimento.</p><button onclick="openWA(event,'Quero saber sobre Deezer.')">SAIBA MAIS</button></article><article><img class="sva-logo" src="assets/img/servicos/logo-alares-play.png" alt="Alares Play"><article><h3>Alares Play</h3><p>TV e conteúdos digitais.</p><button onclick="openWA(event,'Quero saber sobre Alares Play.')">SAIBA MAIS</button></article><article><h3>ExitLag</h3><p>Experiência gamer.</p><button onclick="openWA(event,'Quero saber sobre ExitLag.')">SAIBA MAIS</button></article><article><h3>McAfee</h3><p>Segurança digital.</p><button onclick="openWA(event,'Quero saber sobre McAfee.')">SAIBA MAIS</button></article><article><h3>Ubook Go</h3><p>Conteúdos de áudio e leitura.</p><button onclick="openWA(event,'Quero saber sobre Ubook Go.')">SAIBA MAIS</button></article></div></div><footer class="footer page-footer">
+  <div class="footer-main">
+    <div class="footer-col footer-brand">
+      <a href="#" onclick="goHome(event)" class="footer-logo-text" aria-label="Alares - página inicial"><img class="alares-logo-footer-img" src="assets/img/logos/logo-white.png" alt="Alares"></a>
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=61594459374025" target="_blank" rel="noopener" aria-label="Facebook Alares">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+        </a>
+      </div>
+      <a href="#" class="footer-wa" onclick="openWA(event,'Olá! Vim pelo site e quero falar com a Alares.')">
+        <svg viewBox="0 0 32 32" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M19.11 17.21c-.27-.14-1.59-.79-1.84-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.02-.22-.53-.44-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.95.93-.95 2.27 0 1.34.97 2.63 1.11 2.81.14.18 1.91 2.92 4.63 4.09.65.28 1.16.45 1.56.58.65.21 1.24.18 1.71.11.52-.08 1.59-.65 1.81-1.28.23-.63.23-1.18.16-1.29-.07-.11-.25-.18-.52-.32z"/><path d="M16.02 3C8.84 3 3 8.84 3 16c0 2.28.59 4.42 1.63 6.29L3 29l6.86-1.58A12.94 12.94 0 0 0 16.02 29C23.2 29 29 23.16 29 16S23.2 3 16.02 3zm0 23.7c-2.11 0-4.07-.62-5.72-1.69l-.41-.25-4.07.94.96-3.96-.27-.42A10.7 10.7 0 1 1 16.02 26.7z"/></svg>
+        WHATSAPP · (15) 2121-0619
+      </a>
+    </div>
+    <div class="footer-col"><h3>A Alares</h3><ul>
+      <li><a href="#" onclick="openPage(event,'conheca')">Conheça a Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'trabalhe')">Trabalhe Conosco</a></li>
+      <li><a href="#" onclick="openPage(event,'blog')">Blog Indo Além</a></li>
+      <li><a href="#" onclick="openPage(event,'loja')">Encontre uma loja</a></li>
+      <li><a href="#" onclick="openPage(event,'esg')">ESG na Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'etica')">Canal de Ética</a></li>
+      <li><a href="#" onclick="openPage(event,'ri')">Relação com investidores</a></li>
+      <li><a href="#" onclick="openPage(event,'imprensa')">Sala de imprensa</a></li>
+      <li><a href="#" onclick="openPage(event,'materiais')">Materiais de apoio</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para você</h3><ul>
+      <li><a href="#" onclick="openPage(event,'planos')">Planos de internet</a></li>
+      <li><a href="#" onclick="openPage(event,'digitais')">+ Conteúdos</a></li>
+      <li><a href="#" onclick="openPage(event,'fatura')">2ª via do boleto</a></li>
+      <li><a href="#" onclick="openPage(event,'auto')">Autoatendimento</a></li>
+      <li><a href="#" onclick="openPage(event,'central')">Central do assinante</a></li>
+      <li><a href="#" onclick="openPage(event,'contratos')">Contratos e regulamentos</a></li>
+      <li><a href="#" onclick="openPage(event,'negociacao')">Portal de negociação</a></li>
+      <li><a href="#" onclick="openPage(event,'fraude')">Prevenção a fraude</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para sua empresa</h3><ul>
+      <li><a href="#" onclick="openPage(event,'empresa')">Pequenas e médias empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Grandes empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Governo</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Atacado</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-legal"><a href="#" onclick="openPage(event,'privacidade')">Políticas de privacidade e cookies</a><span>© Alares</span></div>
+</footer></section>
+
+<section id="page-fatura" class="page"><div class="page-head"><div class="container"><a href="#" class="page-back" onclick="goHome(event)">← Voltar</a><h1>2ª via do boleto</h1><p>Consulte sua fatura e receba orientação para pagamento.</p></div></div><div class="page-content"><div class="page-cards"><div class="page-card"><h3>Emitir 2ª via</h3><p>Peça sua segunda via pelo canal oficial.</p><button onclick="openWA(event,'Olá! Preciso da segunda via da minha fatura Alares.')">EMITIR 2ª VIA</button></div><div class="page-card"><h3>Fatura em PDF</h3><p>Precisa receber ou baixar sua fatura?</p><button onclick="openWA(event,'Olá! Preciso receber minha fatura em PDF.')">SOLICITAR PDF</button></div><div class="page-card"><h3>Pagamento</h3><p>Ajuda para identificar uma cobrança ou realizar o pagamento.</p><button onclick="openWA(event,'Olá! Preciso de ajuda com o pagamento da minha fatura.')">AJUDA</button></div><div class="page-card"><h3>App Alares</h3><p>Peça o link oficial para baixar o aplicativo.</p><button onclick="openWA(event,'Olá! Quero o link oficial para baixar o App Alares.')">BAIXAR APP</button></div></div></div><footer class="footer page-footer">
+  <div class="footer-main">
+    <div class="footer-col footer-brand">
+      <a href="#" onclick="goHome(event)" class="footer-logo-text" aria-label="Alares - página inicial"><img class="alares-logo-footer-img" src="assets/img/logos/logo-white.png" alt="Alares"></a>
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=61594459374025" target="_blank" rel="noopener" aria-label="Facebook Alares">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+        </a>
+      </div>
+      <a href="#" class="footer-wa" onclick="openWA(event,'Olá! Vim pelo site e quero falar com a Alares.')">
+        <svg viewBox="0 0 32 32" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M19.11 17.21c-.27-.14-1.59-.79-1.84-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.02-.22-.53-.44-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.95.93-.95 2.27 0 1.34.97 2.63 1.11 2.81.14.18 1.91 2.92 4.63 4.09.65.28 1.16.45 1.56.58.65.21 1.24.18 1.71.11.52-.08 1.59-.65 1.81-1.28.23-.63.23-1.18.16-1.29-.07-.11-.25-.18-.52-.32z"/><path d="M16.02 3C8.84 3 3 8.84 3 16c0 2.28.59 4.42 1.63 6.29L3 29l6.86-1.58A12.94 12.94 0 0 0 16.02 29C23.2 29 29 23.16 29 16S23.2 3 16.02 3zm0 23.7c-2.11 0-4.07-.62-5.72-1.69l-.41-.25-4.07.94.96-3.96-.27-.42A10.7 10.7 0 1 1 16.02 26.7z"/></svg>
+        WHATSAPP · (15) 2121-0619
+      </a>
+    </div>
+    <div class="footer-col"><h3>A Alares</h3><ul>
+      <li><a href="#" onclick="openPage(event,'conheca')">Conheça a Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'trabalhe')">Trabalhe Conosco</a></li>
+      <li><a href="#" onclick="openPage(event,'blog')">Blog Indo Além</a></li>
+      <li><a href="#" onclick="openPage(event,'loja')">Encontre uma loja</a></li>
+      <li><a href="#" onclick="openPage(event,'esg')">ESG na Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'etica')">Canal de Ética</a></li>
+      <li><a href="#" onclick="openPage(event,'ri')">Relação com investidores</a></li>
+      <li><a href="#" onclick="openPage(event,'imprensa')">Sala de imprensa</a></li>
+      <li><a href="#" onclick="openPage(event,'materiais')">Materiais de apoio</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para você</h3><ul>
+      <li><a href="#" onclick="openPage(event,'planos')">Planos de internet</a></li>
+      <li><a href="#" onclick="openPage(event,'digitais')">+ Conteúdos</a></li>
+      <li><a href="#" onclick="openPage(event,'fatura')">2ª via do boleto</a></li>
+      <li><a href="#" onclick="openPage(event,'auto')">Autoatendimento</a></li>
+      <li><a href="#" onclick="openPage(event,'central')">Central do assinante</a></li>
+      <li><a href="#" onclick="openPage(event,'contratos')">Contratos e regulamentos</a></li>
+      <li><a href="#" onclick="openPage(event,'negociacao')">Portal de negociação</a></li>
+      <li><a href="#" onclick="openPage(event,'fraude')">Prevenção a fraude</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para sua empresa</h3><ul>
+      <li><a href="#" onclick="openPage(event,'empresa')">Pequenas e médias empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Grandes empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Governo</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Atacado</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-legal"><a href="#" onclick="openPage(event,'privacidade')">Políticas de privacidade e cookies</a><span>© Alares</span></div>
+</footer></section>
+
+<section id="page-empresa" class="page"><div class="page-head"><div class="container"><a href="#" class="page-back" onclick="goHome(event)">← Voltar</a><h1>Para sua empresa</h1><p>Soluções de conectividade e serviços para diferentes perfis de negócio.</p></div></div><div class="page-content">
+<div class="empresa-banner"><img src="assets/img/banners/banner-servicos-digitais.png" alt="Soluções digitais Alares para empresas"></div>
+<div class="feature-panel"><div><span class="eyebrow">EMPRESAS</span><h2>Conectividade que o seu negócio precisa</h2><p>Internet fibra, dados, Wi-Fi corporativo, segurança digital e suporte técnico para pequenos negócios, grandes operações, órgãos públicos e parceiros de atacado.</p><a class="empresa-cta" href="https://wa.me/551521210619?text=Olá!%20Quero%20conhecer%20as%20soluções%20Alares%20para%20empresas." target="_blank" rel="noopener" onclick="openWA(event,'Olá! Quero conhecer as soluções Alares para empresas.',true)">FALAR COMERCIAL</a></div><div class="feature-stat"><strong>32 mil+</strong><span>km de fibra óptica</span><strong>232</strong><span>cidades atendidas</span><strong>24h</strong><span>suporte técnico especializado</span></div></div>
+<div class="info-grid">
+<article><h3>Pequenas e médias</h3><p>Conectividade estável para escritórios, lojas e profissionais que precisam crescer sem quedas.</p><a class="card-btn" href="https://wa.me/551521210619?text=Quero%20saber%20sobre%20soluções%20para%20pequenas%20e%20médias%20empresas." target="_blank" rel="noopener" onclick="openWA(event,'Quero saber sobre soluções para pequenas e médias empresas.',true)">FALAR COMERCIAL</a></article>
+<article><h3>Grandes empresas</h3><p>Soluções de alta capacidade para operações de maior porte, com SLA e suporte dedicado.</p><a class="card-btn" href="https://wa.me/551521210619?text=Quero%20saber%20sobre%20soluções%20para%20grandes%20empresas." target="_blank" rel="noopener" onclick="openWA(event,'Quero saber sobre soluções para grandes empresas.',true)">FALAR COMERCIAL</a></article>
+<article><h3>Governo</h3><p>Conectividade e soluções para órgãos públicos com segurança e estabilidade.</p><a class="card-btn" href="https://wa.me/551521210619?text=Quero%20saber%20sobre%20soluções%20para%20o%20Governo." target="_blank" rel="noopener" onclick="openWA(event,'Quero saber sobre soluções para Governo.',true)">FALAR COMERCIAL</a></article>
+<article><h3>Atacado</h3><p>Infraestrutura e conectividade para parceiros revendedores e provedores.</p><a class="card-btn" href="https://wa.me/551521210619?text=Quero%20saber%20sobre%20soluções%20de%20Atacado." target="_blank" rel="noopener" onclick="openWA(event,'Quero saber sobre soluções de Atacado.',true)">FALAR COMERCIAL</a></article>
+</div>
+<div class="cta-panel"><h2>Outras soluções empresariais</h2><p>Internet ou dados, telefonia, monitoramento de rede, Wi-Fi, cloud, segurança digital, colocation e soluções inteligentes para o seu negócio.</p><a class="card-btn light" href="https://wa.me/551521210619?text=Olá!%20Quero%20conhecer%20as%20soluções%20Alares%20para%20empresas." target="_blank" rel="noopener" onclick="openWA(event,'Olá! Quero conhecer as soluções Alares para empresas.',true)">FALAR COMERCIAL</a></div>
+<div class="empresa-contact"><span>Fale com o comercial pelo WhatsApp</span><strong>(15) 2121-0619</strong><a class="card-btn" href="https://wa.me/551521210619?text=Olá!%20Quero%20falar%20com%20o%20comercial%20da%20Alares." target="_blank" rel="noopener" onclick="openWA(event,'Olá! Quero falar com o comercial da Alares.',true)">CHAMAR NO WHATSAPP</a></div>
+<footer class="footer page-footer">
+  <div class="footer-main">
+    <div class="footer-col footer-brand">
+      <a href="#" onclick="goHome(event)" class="footer-logo-text" aria-label="Alares - página inicial"><img class="alares-logo-footer-img" src="assets/img/logos/logo-white.png" alt="Alares"></a>
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=61594459374025" target="_blank" rel="noopener" aria-label="Facebook Alares">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+        </a>
+      </div>
+      <a href="#" class="footer-wa" onclick="openWA(event,'Olá! Vim pelo site e quero falar com a Alares.')">
+        <svg viewBox="0 0 32 32" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M19.11 17.21c-.27-.14-1.59-.79-1.84-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.02-.22-.53-.44-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.95.93-.95 2.27 0 1.34.97 2.63 1.11 2.81.14.18 1.91 2.92 4.63 4.09.65.28 1.16.45 1.56.58.65.21 1.24.18 1.71.11.52-.08 1.59-.65 1.81-1.28.23-.63.23-1.18.16-1.29-.07-.11-.25-.18-.52-.32z"/><path d="M16.02 3C8.84 3 3 8.84 3 16c0 2.28.59 4.42 1.63 6.29L3 29l6.86-1.58A12.94 12.94 0 0 0 16.02 29C23.2 29 29 23.16 29 16S23.2 3 16.02 3zm0 23.7c-2.11 0-4.07-.62-5.72-1.69l-.41-.25-4.07.94.96-3.96-.27-.42A10.7 10.7 0 1 1 16.02 26.7z"/></svg>
+        WHATSAPP · (15) 2121-0619
+      </a>
+    </div>
+    <div class="footer-col"><h3>A Alares</h3><ul>
+      <li><a href="#" onclick="openPage(event,'conheca')">Conheça a Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'trabalhe')">Trabalhe Conosco</a></li>
+      <li><a href="#" onclick="openPage(event,'blog')">Blog Indo Além</a></li>
+      <li><a href="#" onclick="openPage(event,'loja')">Encontre uma loja</a></li>
+      <li><a href="#" onclick="openPage(event,'esg')">ESG na Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'etica')">Canal de Ética</a></li>
+      <li><a href="#" onclick="openPage(event,'ri')">Relação com investidores</a></li>
+      <li><a href="#" onclick="openPage(event,'imprensa')">Sala de imprensa</a></li>
+      <li><a href="#" onclick="openPage(event,'materiais')">Materiais de apoio</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para você</h3><ul>
+      <li><a href="#" onclick="openPage(event,'planos')">Planos de internet</a></li>
+      <li><a href="#" onclick="openPage(event,'digitais')">+ Conteúdos</a></li>
+      <li><a href="#" onclick="openPage(event,'fatura')">2ª via do boleto</a></li>
+      <li><a href="#" onclick="openPage(event,'auto')">Autoatendimento</a></li>
+      <li><a href="#" onclick="openPage(event,'central')">Central do assinante</a></li>
+      <li><a href="#" onclick="openPage(event,'contratos')">Contratos e regulamentos</a></li>
+      <li><a href="#" onclick="openPage(event,'negociacao')">Portal de negociação</a></li>
+      <li><a href="#" onclick="openPage(event,'fraude')">Prevenção a fraude</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para sua empresa</h3><ul>
+      <li><a href="#" onclick="openPage(event,'empresa')">Pequenas e médias empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Grandes empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Governo</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Atacado</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-legal"><a href="#" onclick="openPage(event,'privacidade')">Políticas de privacidade e cookies</a><span>© Alares</span></div>
+</footer></section>
+
+<section id="page-suporte" class="page"><div class="page-head"><div class="container"><a href="#" class="page-back" onclick="goHome(event)">← Voltar</a><h1>Suporte 24H</h1><p>Precisa de ajuda com sua internet ou serviço?</p></div></div><div class="page-content"><div class="info-grid"><article><h3>Suporte técnico</h3><p>Internet lenta, sem conexão ou problemas no Wi‑Fi.</p><button onclick="openWA(event,'Olá! Preciso de suporte técnico para minha internet.')">CHAMAR SUPORTE</button></article><article><h3>Atendimento</h3><p>Fale com a equipe sobre contrato ou serviço.</p><button onclick="openWA(event,'Olá! Preciso de atendimento da Alares.')">FALAR AGORA</button></article><article><h3>WhatsApp oficial</h3><p>Atendimento direto pelo WhatsApp.</p><button onclick="openWA(event,'Olá! Vim pelo site e preciso de ajuda.')">ABRIR WHATSAPP</button></article></div></div><footer class="footer page-footer">
+  <div class="footer-main">
+    <div class="footer-col footer-brand">
+      <a href="#" onclick="goHome(event)" class="footer-logo-text" aria-label="Alares - página inicial"><img class="alares-logo-footer-img" src="assets/img/logos/logo-white.png" alt="Alares"></a>
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=61594459374025" target="_blank" rel="noopener" aria-label="Facebook Alares">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+        </a>
+      </div>
+      <a href="#" class="footer-wa" onclick="openWA(event,'Olá! Vim pelo site e quero falar com a Alares.')">
+        <svg viewBox="0 0 32 32" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M19.11 17.21c-.27-.14-1.59-.79-1.84-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.02-.22-.53-.44-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.95.93-.95 2.27 0 1.34.97 2.63 1.11 2.81.14.18 1.91 2.92 4.63 4.09.65.28 1.16.45 1.56.58.65.21 1.24.18 1.71.11.52-.08 1.59-.65 1.81-1.28.23-.63.23-1.18.16-1.29-.07-.11-.25-.18-.52-.32z"/><path d="M16.02 3C8.84 3 3 8.84 3 16c0 2.28.59 4.42 1.63 6.29L3 29l6.86-1.58A12.94 12.94 0 0 0 16.02 29C23.2 29 29 23.16 29 16S23.2 3 16.02 3zm0 23.7c-2.11 0-4.07-.62-5.72-1.69l-.41-.25-4.07.94.96-3.96-.27-.42A10.7 10.7 0 1 1 16.02 26.7z"/></svg>
+        WHATSAPP · (15) 2121-0619
+      </a>
+    </div>
+    <div class="footer-col"><h3>A Alares</h3><ul>
+      <li><a href="#" onclick="openPage(event,'conheca')">Conheça a Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'trabalhe')">Trabalhe Conosco</a></li>
+      <li><a href="#" onclick="openPage(event,'blog')">Blog Indo Além</a></li>
+      <li><a href="#" onclick="openPage(event,'loja')">Encontre uma loja</a></li>
+      <li><a href="#" onclick="openPage(event,'esg')">ESG na Alares</a></li>
+      <li><a href="#" onclick="openPage(event,'etica')">Canal de Ética</a></li>
+      <li><a href="#" onclick="openPage(event,'ri')">Relação com investidores</a></li>
+      <li><a href="#" onclick="openPage(event,'imprensa')">Sala de imprensa</a></li>
+      <li><a href="#" onclick="openPage(event,'materiais')">Materiais de apoio</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para você</h3><ul>
+      <li><a href="#" onclick="openPage(event,'planos')">Planos de internet</a></li>
+      <li><a href="#" onclick="openPage(event,'digitais')">+ Conteúdos</a></li>
+      <li><a href="#" onclick="openPage(event,'fatura')">2ª via do boleto</a></li>
+      <li><a href="#" onclick="openPage(event,'auto')">Autoatendimento</a></li>
+      <li><a href="#" onclick="openPage(event,'central')">Central do assinante</a></li>
+      <li><a href="#" onclick="openPage(event,'contratos')">Contratos e regulamentos</a></li>
+      <li><a href="#" onclick="openPage(event,'negociacao')">Portal de negociação</a></li>
+      <li><a href="#" onclick="openPage(event,'fraude')">Prevenção a fraude</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>Para sua empresa</h3><ul>
+      <li><a href="#" onclick="openPage(event,'empresa')">Pequenas e médias empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Grandes empresas</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Governo</a></li>
+      <li><a href="#" onclick="openPage(event,'empresa')">Atacado</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-legal"><a href="#" onclick="openPage(event,'privacidade')">Políticas de privacidade e cookies</a><span>© Alares</span></div>
+</footer></section>
+
+<a class="sac" href="#" onclick="openWA(event,'Olá! Quero falar com o SAC da Alares.')">SAC · <strong>(15) 2121-0619</strong></a>
+<a class="float-wa" href="#" onclick="openWA(event,'Olá! Vim pelo site e preciso de atendimento.')" aria-label="WhatsApp"><svg viewBox="0 0 32 32" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M19.11 17.21c-.27-.14-1.59-.79-1.84-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.02-.22-.53-.44-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.95.93-.95 2.27 0 1.34.97 2.63 1.11 2.81.14.18 1.91 2.92 4.63 4.09.65.28 1.16.45 1.56.58.65.21 1.24.18 1.71.11.52-.08 1.59-.65 1.81-1.28.23-.63.23-1.18.16-1.29-.07-.11-.25-.18-.52-.32z"/><path d="M16.02 3C8.84 3 3 8.84 3 16c0 2.28.59 4.42 1.63 6.29L3 29l6.86-1.58A12.94 12.94 0 0 0 16.02 29C23.2 29 29 23.16 29 16S23.2 3 16.02 3zm0 23.7c-2.11 0-4.07-.62-5.72-1.69l-.41-.25-4.07.94.96-3.96-.27-.42A10.7 10.7 0 1 1 16.02 26.7z"/></svg></a>
+
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <a href="#" onclick="openPage(event,'planos')">Planos de internet</a>
+  <a href="#" onclick="openPage(event,'digitais')">+ Conteúdos</a>
+  <a href="#" onclick="openPage(event,'fatura')">2ª via do boleto</a>
+  <a href="#" onclick="openPage(event,'central')">Central do assinante</a>
+  <a href="#" onclick="openPage(event,'suporte')">Suporte 24H</a>
+  <a href="#" onclick="openPage(event,'empresa')">Para empresas</a>
+</div>
+
+<script>
+const WA='551521210619';
+function openWA(e,msg,isLead=false){
+  if(e)e.preventDefault();
+  if(isLead && typeof fbq==='function') fbq('track','Lead');
+  const url='https://wa.me/'+WA+'?text='+encodeURIComponent(msg||'Olá! Vim pelo site e preciso de atendimento.');
+  if(window.matchMedia('(max-width: 700px)').matches){ window.location.href=url; }
+  else { window.open(url,'_blank','noopener,noreferrer'); }
+}
+function closeMenu(){const menu=document.getElementById('mobileMenu');if(menu)menu.classList.remove('open');}
+function goHome(e){if(e)e.preventDefault();closeMenu();document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));document.getElementById('home').style.display='block';window.scrollTo({top:0,behavior:'smooth'});}
+function openPage(e,name){if(e)e.preventDefault();closeMenu();document.getElementById('home').style.display='none';document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));const p=document.getElementById('page-'+name);if(p){p.classList.add('active');window.scrollTo({top:0,behavior:'smooth'});}}
+function toggleMenu(e){if(e)e.preventDefault();const menu=document.getElementById('mobileMenu');if(menu){menu.classList.toggle('open');menu.setAttribute('aria-hidden',menu.classList.contains('open')?'false':'true');}}
+function initTabs(){
+  document.querySelectorAll('.tabs').forEach(group=>{
+    group.querySelectorAll('.tab').forEach(tab=>{
+      tab.type='button';
+      tab.addEventListener('click',()=>{
+        group.querySelectorAll('.tab').forEach(t=>{t.classList.remove('active');t.setAttribute('aria-pressed','false');});
+        tab.classList.add('active');
+        tab.setAttribute('aria-pressed','true');
+
+        if(tab.id==='locationPlanTab'){
+          if(currentLocation && currentLocation.cep){
+            const offers=document.querySelector('.offer-wrap');
+            if(offers) offers.scrollIntoView({behavior:'smooth',block:'start'});
+          }else{
+            scrollToCoverage();
+          }
+        }
+      });
+    });
+  });
+}
+
+let current=0;
+function showSlide(i){const slides=document.querySelectorAll('.hero-slide');const dots=document.querySelectorAll('.hero-dots button');if(!slides.length)return;current=(i+slides.length)%slides.length;slides.forEach((x,n)=>x.classList.toggle('active',n===current));dots.forEach((x,n)=>x.classList.toggle('active',n===current));}
+function nextSlide(dir){showSlide(current+dir);}
+function scrollWhy(dir){const grid=document.querySelector('.why-grid');if(!grid)return;grid.scrollBy({left:dir*Math.max(220,grid.clientWidth/2),behavior:'smooth'});}
+initTabs();
+let autoSlide=setInterval(()=>nextSlide(1),7000);
+document.querySelector('.hero-media')?.addEventListener('mouseenter',()=>clearInterval(autoSlide));
+document.querySelector('.hero-media')?.addEventListener('mouseleave',()=>autoSlide=setInterval(()=>nextSlide(1),7000));
+
+document.addEventListener('DOMContentLoaded',()=>{
+  const more=document.querySelector('.more');
+  if(more) more.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();toggleMenu(e);}});
+  document.querySelectorAll('a[href="#"]').forEach(a=>{if(!a.getAttribute('onclick')) a.addEventListener('click',e=>e.preventDefault());});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu();});
+  document.addEventListener('click',e=>{
+    const menu=document.getElementById('mobileMenu');
+    const trigger=document.querySelector('.more');
+    if(menu && menu.classList.contains('open') && !menu.contains(e.target) && !trigger?.contains(e.target)) closeMenu();
+  });
+});
+
+function formatCEP(value){
+  const digits=(value||'').replace(/\D/g,'').slice(0,8);
+  return digits.length>5 ? digits.slice(0,5)+'-'+digits.slice(5) : digits;
+}
+let currentLocation={cep:'',city:'',uf:''};
+
+function scrollToCoverage(){
+  const box=document.querySelector('.coverage-box');
+  if(box) box.scrollIntoView({behavior:'smooth',block:'center'});
+}
+
+function applyLocation(location){
+  currentLocation=location||{cep:'',city:'',uf:''};
+  const cep=currentLocation.cep||'';
+  const label=document.getElementById('locationLabel');
+  const tab=document.getElementById('locationPlanTab');
+  const title=document.getElementById('coverageTitle');
+  const subtitle=document.getElementById('coverageSubtitle');
+  if(currentLocation.city && currentLocation.uf){
+    const place=currentLocation.city+' - '+currentLocation.uf;
+    if(label) label.textContent='📍 '+place;
+    if(tab) tab.textContent='⌖ Planos para '+place;
+    if(title) title.textContent='Cobertura disponível em '+place;
+    if(subtitle) subtitle.textContent='CEP '+cep+' identificado. Confira os planos disponíveis para sua região.';
+  }else if(cep){
+    if(label) label.textContent='📍 CEP '+cep;
+    if(tab) tab.textContent='⌖ Planos para o CEP '+cep;
+    if(title) title.textContent='Cobertura disponível para o seu CEP';
+    if(subtitle) subtitle.textContent='CEP '+cep+' consultado. Confira os planos disponíveis.';
+  }else{
+    if(label) label.textContent='📍 CONSULTE SEU CEP';
+    if(tab) tab.textContent='⌖ Planos para o local informado';
+    if(title) title.textContent='Consulte a cobertura no seu CEP';
+    if(subtitle) subtitle.textContent='Digite seu CEP e confira a disponibilidade de internet.';
+  }
+}
+
+function saveLocation(){
+  try{localStorage.setItem('alaresLocation',JSON.stringify(currentLocation));}catch(_){ }
+}
+
+async function lookupCEP(cep){
+  const res=await fetch('https://viacep.com.br/ws/'+cep.replace(/\D/g,'')+'/json/');
+  if(!res.ok) throw new Error('Falha na consulta');
+  const data=await res.json();
+  if(data.erro) return null;
+  return {cep:formatCEP(cep),city:data.localidade||'',uf:data.uf||''};
+}
+
+async function consultarCobertura(e){
+  e.preventDefault();
+  const input=document.getElementById('coverageCep');
+  const result=document.getElementById('coverageResult');
+  const wa=document.getElementById('coverageWhatsApp');
+  const cep=formatCEP(input.value);
+  input.value=cep;
+  const digits=cep.replace(/\D/g,'');
+  if(digits.length!==8){
+    result.textContent='Digite um CEP válido com 8 números.';
+    result.style.background='#fff3f4'; result.style.borderColor='#ffd3d3'; result.style.color='#b3343f';
+    result.classList.add('show'); wa.classList.remove('show');
+    return;
+  }
+
+  result.style.background='#f3f2ff'; result.style.borderColor='#dcd9ff'; result.style.color='#463ee4';
+  result.textContent='Consultando sua região…';
+  result.classList.add('show');
+  wa.classList.remove('show');
+
+  let location=null;
+  try{ location=await lookupCEP(digits); }catch(_){ location=null; }
+
+  if(!location){
+    // Mantém a cobertura para todo CEP com 8 dígitos, mesmo se o serviço de CEP estiver indisponível.
+    location={cep,city:'',uf:''};
+  }
+
+  applyLocation(location);
+  saveLocation();
+
+  result.style.background='#eafff5'; result.style.borderColor='#b9f5d9'; result.style.color='#0a7a4e';
+  if(location.city && location.uf){
+    result.innerHTML='✓ Cobertura disponível para <strong>'+location.city+' - '+location.uf+'</strong><span class="coverage-city">CEP '+location.cep+'</span>';
+  }else{
+    result.textContent='✓ Cobertura disponível para o CEP '+location.cep+'.';
+  }
+
+  const place=location.city&&location.uf ? ' em '+location.city+' - '+location.uf : '';
+  const msg='Olá! Consultei o CEP '+location.cep+place+' no site e quero contratar um plano com cobertura disponível.';
+  wa.href='https://wa.me/'+WA+'?text='+encodeURIComponent(msg);
+  wa.classList.add('show');
+}
+
+document.getElementById('coverageCep')?.addEventListener('input',function(){this.value=formatCEP(this.value);});
+document.getElementById('coverageForm')?.addEventListener('submit',consultarCobertura);
+document.getElementById('locationLabel')?.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();scrollToCoverage();}});
+try{
+  const saved=JSON.parse(localStorage.getItem('alaresLocation')||'null');
+  if(saved && saved.cep){
+    const input=document.getElementById('coverageCep');
+    if(input) input.value=saved.cep;
+    applyLocation(saved);
+  }else{ applyLocation(null); }
+}catch(_){ applyLocation(null); }
+</script>
+
+</body>
+</html>
